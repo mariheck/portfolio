@@ -9,6 +9,7 @@ class ProjectsPage extends React.Component {
                 id: 1,
                 title: 'Saving',
                 imageUrl: './images/saving.jpg',
+                tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
                 websiteUrl: 'https://github.com',
@@ -18,6 +19,7 @@ class ProjectsPage extends React.Component {
                 id: 2,
                 title: 'Saving',
                 imageUrl: './images/saving.jpg',
+                tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
                 websiteUrl: 'https://github.com'
@@ -26,6 +28,7 @@ class ProjectsPage extends React.Component {
                 id: 3,
                 title: 'Saving',
                 imageUrl: './images/saving.jpg',
+                tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
                 websiteUrl: 'https://github.com',
@@ -36,7 +39,7 @@ class ProjectsPage extends React.Component {
 
     render() {
         const { projects } = this.state;
-        const projectsNumber = projects.length;
+        const projectsTotal = projects.length;
 
         return (
             <main>
@@ -54,14 +57,15 @@ class ProjectsPage extends React.Component {
                     </a>{' '}
                     pour voir plus de projets.
                 </p>
-                <div className="grid">
+                <div className="container">
                     {projects.map(project => (
                         <Card
                             key={project.id}
                             id={`00${project.id}`}
-                            projectsNumber={`00${projectsNumber}`}
+                            projectsNumber={`00${projectsTotal}`}
                             title={project.title}
                             imageUrl={project.imageUrl}
+                            tags={project.tags}
                             description={project.description}
                             websiteUrl={project.websiteUrl}
                             githubLink={project.githubLink}

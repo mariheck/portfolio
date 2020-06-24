@@ -26,16 +26,20 @@
 
     .content {
         width: 90%;
-        margin-left: 4%;
+        margin-left: 5%;
         padding: 25px 50px;
+        position: relative;
+        top: -100px;
+        margin-bottom: -100px;
+        text-align: left;
+        background-color: #fff;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.05),
             0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05),
             0 32px 32px rgba(0, 0, 0, 0.05);
-        position: relative;
-        top: -100px;
-        text-align: left;
-        background-color: #fff;
-        height: 280px;
 
         span {
             font-size: 11px;
@@ -44,25 +48,95 @@
 
         h4 {
             font-size: 24px;
-            margin: 30px auto;
+            margin: 20px 0;
             transition: color ease-in 0.2s;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            font-size: 11px;
+            color: #9d9d9d;
+            margin-bottom: 20px;
+
+            li:not(:last-of-type) {
+                margin-right: 10px;
+                padding-right: 10px;
+                border-right: solid 1px #9d9d9d;
+            }
         }
 
         p:not(.links) {
             font-size: 11px;
             line-height: 1.8;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .links {
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            margin: auto 0 0;
+            width: 100%;
 
-            a {
+            a,
+            button {
                 color: #9d9d9d;
-                transition: color ease-in 0.2s;
+                background-color: transparent;
+                border: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+                text-align: center;
+                line-height: 30px;
+                transition: color ease-in 0.5s, background ease-in 0.5s;
+
+                &:not(:last-of-type) {
+                    margin-right: 5px;
+                }
+
+                i {
+                    margin-right: 0;
+                }
 
                 &:hover {
-                    color: #a33a48;
+                    background-color: rgba(163, 58, 72, 0.8);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &.large {
+        width: 80%;
+        flex-basis: 100%;
+
+        .image {
+            width: 70%;
+            height: 450px;
+            align-self: flex-start;
+            filter: grayscale(0%);
+        }
+
+        .content {
+            top: -300px;
+            width: 60%;
+            height: 400px;
+            align-self: flex-end;
+            margin-bottom: -300px;
+
+            h4 {
+                color: #a33a48;
+            }
+
+            .links {
+                justify-content: space-between;
+
+                a,
+                button {
+                    width: 35px;
+                    height: 35px;
                 }
             }
         }
