@@ -30,14 +30,16 @@ const Card = ({
                 >
                     <i className="external alternate icon"></i>
                 </a>
-                <a
-                    href={githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Code source"
-                >
-                    <i className="github icon"></i>
-                </a>
+                {githubLink && (
+                    <a
+                        href={githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Code source"
+                    >
+                        <i className="github icon"></i>
+                    </a>
+                )}
             </p>
         </div>
     </div>

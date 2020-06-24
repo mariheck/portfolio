@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 import HomePage from './pages/homepage/homepage.component';
 import ServicesPage from './pages/services/services.component';
 import ProjectsPage from './pages/projects/projects.component';
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/contact" component={ContactPage} />
                 <Route exact path="/mentions" component={MentionsPage} />
             </Switch>
+            <Footer />
         </div>
     );
 }

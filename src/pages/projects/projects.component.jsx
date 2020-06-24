@@ -20,8 +20,7 @@ class ProjectsPage extends React.Component {
                 imageUrl: './images/saving.jpg',
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-                websiteUrl: 'https://github.com',
-                githubLink: 'https://github.com/mariheck'
+                websiteUrl: 'https://github.com'
             },
             {
                 id: 3,
@@ -45,7 +44,14 @@ class ProjectsPage extends React.Component {
                 <p className="intro">
                     Vous trouverez ici certains de mes travaux passés, parmis
                     ceux qui m'ont le plus apporté, ou tout simplement parmis
-                    mes favoris. N'hésitez pas à consulter mon profil GitHub
+                    mes favoris. N'hésitez pas à consulter mon profil{' '}
+                    <a
+                        href="https://github.com/mariheck"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>{' '}
                     pour voir plus de projets.
                 </p>
                 <div className="grid">
