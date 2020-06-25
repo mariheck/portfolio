@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../../components/card/card.component';
-import './services.styles.scss';
 
 class ServicesPage extends React.Component {
     state = {
@@ -9,7 +8,7 @@ class ServicesPage extends React.Component {
             {
                 id: 1,
                 title: 'Développement Front-End',
-                imageUrl: './images/saving.jpg',
+                imageUrl: './images/front.jpg',
                 tags: [
                     'html',
                     'css',
@@ -25,7 +24,7 @@ class ServicesPage extends React.Component {
             {
                 id: 2,
                 title: 'Développement Back-End',
-                imageUrl: './images/saving.jpg',
+                imageUrl: './images/back.jpg',
                 tags: ['node.js', 'mongoDB'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
@@ -33,7 +32,7 @@ class ServicesPage extends React.Component {
             {
                 id: 3,
                 title: 'Responsive Design',
-                imageUrl: './images/saving.jpg',
+                imageUrl: './images/mobile.jpg',
                 tags: ['desktop', 'mobile', 'tablet'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
