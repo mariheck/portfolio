@@ -1,9 +1,7 @@
 .about-container {
-    justify-content: space-between;
-    align-items: center;
-
     .content {
         width: 50%;
+        align-self: flex-start;
     }
 
     .image {

@@ -4,11 +4,13 @@ import './projects.styles.scss';
 
 class ProjectsPage extends React.Component {
     state = {
+        displayedProjects: [0, 1, 2],
         projects: [
             {
                 id: 1,
-                title: 'Saving',
-                imageUrl: './images/saving.jpg',
+                title: 'Projet 1',
+                imageUrl:
+                    'https://images.unsplash.com/photo-1593011951062-fbeb9c4a484e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
                 tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
@@ -17,8 +19,9 @@ class ProjectsPage extends React.Component {
             },
             {
                 id: 2,
-                title: 'Saving',
-                imageUrl: './images/saving.jpg',
+                title: 'Projet 2',
+                imageUrl:
+                    'https://images.unsplash.com/photo-1593087989983-e887d642a19c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80',
                 tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
@@ -26,8 +29,20 @@ class ProjectsPage extends React.Component {
             },
             {
                 id: 3,
-                title: 'Saving',
-                imageUrl: './images/saving.jpg',
+                title: 'Projet 3',
+                imageUrl:
+                    'https://images.unsplash.com/photo-1593051292423-a86d80624f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+                tags: ['html', 'sass', 'react', 'node.js'],
+                description:
+                    'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
+                websiteUrl: 'https://github.com',
+                githubLink: 'https://github.com/mariheck'
+            },
+            {
+                id: 4,
+                title: 'Projet 4',
+                imageUrl:
+                    'https://images.unsplash.com/photo-1592967833769-60d8693bbf91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
                 tags: ['html', 'sass', 'react', 'node.js'],
                 description:
                     'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
@@ -37,8 +52,32 @@ class ProjectsPage extends React.Component {
         ]
     };
 
+    previousCard = () => {
+        const nextCards = this.state.displayedProjects.map(card => {
+            let newCard = card - 1;
+            if (newCard < 0) {
+                return this.state.projects.length - 1;
+            }
+            return newCard;
+        });
+
+        this.setState({ ...this.state, displayedProjects: nextCards });
+    };
+
+    nextCard = () => {
+        const nextCards = this.state.displayedProjects.map(card => {
+            let newCard = card + 1;
+            if (newCard > this.state.projects.length - 1) {
+                return 0;
+            }
+            return newCard;
+        });
+
+        this.setState({ ...this.state, displayedProjects: nextCards });
+    };
+
     render() {
-        const { projects } = this.state;
+        const { projects, displayedProjects } = this.state;
         const projectsTotal = projects.length;
 
         return (
@@ -58,19 +97,26 @@ class ProjectsPage extends React.Component {
                     pour voir plus de projets.
                 </p>
                 <div className="container">
-                    {projects.map(project => (
+                    <button onClick={() => this.previousCard()}>
+                        <i className="large chevron left icon"></i>
+                    </button>
+
+                    {displayedProjects.map(projectIndex => (
                         <Card
-                            key={project.id}
-                            id={`00${project.id}`}
+                            key={projectIndex}
+                            id={`00${projectIndex + 1}`}
                             projectsNumber={`00${projectsTotal}`}
-                            title={project.title}
-                            imageUrl={project.imageUrl}
-                            tags={project.tags}
-                            description={project.description}
-                            websiteUrl={project.websiteUrl}
-                            githubLink={project.githubLink}
+                            title={projects[projectIndex].title}
+                            imageUrl={projects[projectIndex].imageUrl}
+                            tags={projects[projectIndex].tags}
+                            description={projects[projectIndex].description}
+                            websiteUrl={projects[projectIndex].websiteUrl}
+                            githubLink={projects[projectIndex].githubLink}
                         />
                     ))}
+                    <button onClick={() => this.nextCard()}>
+                        <i className="large chevron right icon"></i>
+                    </button>
                 </div>
             </main>
         );
