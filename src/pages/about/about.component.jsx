@@ -1,4 +1,5 @@
 import React from 'react';
+import Portrait from '../../assets/portrait.jpg';
 import './about.styles.scss';
 
 const AboutPage = () => (
@@ -9,7 +10,7 @@ const AboutPage = () => (
             <div className="content">texte</div>
             <div
                 className="image"
-                style={{ backgroundImage: 'url(./images/portrait.jpg)' }}
+                style={{ backgroundImage: `url(${Portrait})` }}
             />
         </div>
     </main>

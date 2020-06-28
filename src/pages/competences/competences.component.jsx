@@ -1,70 +1,44 @@
 import React from 'react';
 import Card from '../../components/card/card.component';
+import data from '../../data';
 
 class CompetencesPage extends React.Component {
     state = {
-        displayedService: 0,
-        services: [
-            {
-                id: 1,
-                title: 'Développement Front-End',
-                imageUrl: './images/front.jpg',
-                tags: [
-                    'html',
-                    'css',
-                    'sass',
-                    'javascript',
-                    'react',
-                    'redux',
-                    'hook'
-                ],
-                description:
-                    'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
-            },
-            {
-                id: 2,
-                title: 'Développement Back-End',
-                imageUrl: './images/back.jpg',
-                tags: ['node.js', 'mongoDB'],
-                description:
-                    'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
-            },
-            {
-                id: 3,
-                title: 'Responsive Design',
-                imageUrl: './images/mobile.jpg',
-                tags: ['desktop', 'mobile', 'tablet'],
-                description:
-                    'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
-            }
-        ]
+        displayedCompetence: 0,
+        competences: data.competences
     };
 
     previousCard = () => {
-        let currentCard = this.state.displayedService;
+        let currentCard = this.state.displayedCompetence;
         currentCard--;
         currentCard < 0
             ? this.setState({
                   ...this.state,
-                  displayedService: this.state.services.length - 1
+                  displayedCompetence: this.state.competences.length - 1
               })
-            : this.setState({ ...this.state, displayedService: currentCard });
+            : this.setState({
+                  ...this.state,
+                  displayedCompetence: currentCard
+              });
     };
 
     nextCard = () => {
-        let currentCard = this.state.displayedService;
+        let currentCard = this.state.displayedCompetence;
         currentCard++;
-        currentCard > this.state.services.length - 1
+        currentCard > this.state.competences.length - 1
             ? this.setState({
                   ...this.state,
-                  displayedService: 0
+                  displayedCompetence: 0
               })
-            : this.setState({ ...this.state, displayedService: currentCard });
+            : this.setState({
+                  ...this.state,
+                  displayedCompetence: currentCard
+              });
     };
 
     render() {
-        const { services, displayedService } = this.state;
-        const servicesTotal = services.length;
+        const { competences, displayedCompetence } = this.state;
+        const competencesTotal = competences.length;
 
         return (
             <main>
@@ -72,12 +46,14 @@ class CompetencesPage extends React.Component {
 
                 <div className="container">
                     <Card
-                        id={`00${services[displayedService].id}`}
-                        projectsNumber={`00${servicesTotal}`}
-                        title={services[displayedService].title}
-                        imageUrl={services[displayedService].imageUrl}
-                        tags={services[displayedService].tags}
-                        description={services[displayedService].description}
+                        id={`00${competences[displayedCompetence].id}`}
+                        projectsNumber={`00${competencesTotal}`}
+                        title={competences[displayedCompetence].title}
+                        imageUrl={competences[displayedCompetence].imageUrl}
+                        tags={competences[displayedCompetence].tags}
+                        description={
+                            competences[displayedCompetence].description
+                        }
                         large
                         previousCard={this.previousCard}
                         nextCard={this.nextCard}

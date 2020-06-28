@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Background from '../../assets/homepage.jpg';
 import './homepage.styles.scss';
 
 const HomePage = () => (
@@ -7,8 +8,7 @@ const HomePage = () => (
         <div
             className="home-page-background"
             style={{
-                backgroundImage:
-                    'url(https://images.unsplash.com/photo-1590157678696-a5151f512cbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80)'
+                backgroundImage: `url(${Background})`
             }}
         ></div>
         <div className="home-page-text">
