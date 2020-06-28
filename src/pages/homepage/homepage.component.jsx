@@ -13,9 +13,9 @@ const HomePage = () => (
         ></div>
         <div className="home-page-text">
             <h5>Marine Heckler</h5>
-            <h3>Développement de Sites Web</h3>
+            <h3>Développeur Web Full-Stack</h3>
             <div className="links-wrapper">
-                <Link to="/services">En savoir plus</Link>
+                <Link to="/savoir-faire">En savoir plus</Link>
                 <a href="mailto:marine.heckler@icloud.com">Me contacter</a>
             </div>
         </div>

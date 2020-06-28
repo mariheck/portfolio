@@ -8,8 +8,8 @@ const Footer = () => {
     return (
         <footer>
             <p>
-                {year} <span>&copy;</span> Marine Heckler | Siret : 880 456 595
-                00011 | <Link to="/mentions">Mentions Légales</Link>
+                {year} <span>&copy;</span> Marine Heckler |{' '}
+                <Link to="/mentions">Mentions Légales</Link>
             </p>
         </footer>
     );

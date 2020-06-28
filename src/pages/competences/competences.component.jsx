@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../components/card/card.component';
 
-class ServicesPage extends React.Component {
+class CompetencesPage extends React.Component {
     state = {
         displayedService: 0,
         services: [
@@ -68,7 +68,7 @@ class ServicesPage extends React.Component {
 
         return (
             <main>
-                <h3>Services</h3>
+                <h3>Savoir-Faire</h3>
 
                 <div className="container">
                     <Card
@@ -88,4 +88,4 @@ class ServicesPage extends React.Component {
     }
 }
 
-export default ServicesPage;
+export default CompetencesPage;

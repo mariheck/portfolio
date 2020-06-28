@@ -5,14 +5,12 @@ import './header.styles.scss';
 const Header = () => (
     <header>
         <div className="logo-container">
-            <div className="logo">
+            {/* <div className="logo">
                 <Link to="/">mh.</Link>
-            </div>
+            </div> */}
             <div className="title-container">
                 <h1>Marine Heckler</h1>
-                <h2>
-                    <span>full-stack</span> web developer
-                </h2>
+                <h2>full-stack web developer</h2>
             </div>
         </div>
 
@@ -22,7 +20,7 @@ const Header = () => (
                     <Link to="/">Accueil</Link>
                 </li>
                 <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/savoir-faire">Savoir-Faire</Link>
                 </li>
                 <li>
                     <Link to="/projets">Projets</Link>
@@ -31,7 +29,7 @@ const Header = () => (
                     <Link to="/a-propos">A propos</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <a href="mailto:marine.heckler@icloud.com">Contact</a>
                 </li>
             </ul>
         </nav>

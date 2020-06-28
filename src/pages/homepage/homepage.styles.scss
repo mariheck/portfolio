@@ -33,6 +33,8 @@
     h5 {
         color: #a33a48;
         font-size: 20px;
+        opacity: 0;
+        animation: 2.5s fadein 0s forwards;
     }
 
     .links-wrapper {
