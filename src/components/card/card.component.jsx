@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomButton from '../custom-button/custom-button.component';
 import './card.styles.scss';
 
 const Card = ({
@@ -32,34 +33,34 @@ const Card = ({
             <p>{description}</p>
             {large ? (
                 <p className="links">
-                    <button onClick={previousCard}>
+                    <CustomButton onClick={previousCard}>
                         <i className="large chevron left icon"></i>
-                    </button>
-                    <button onClick={nextCard}>
+                    </CustomButton>
+                    <CustomButton onClick={nextCard}>
                         <i className="large chevron right icon"></i>
-                    </button>
+                    </CustomButton>
                 </p>
             ) : (
                 <p className="links">
                     {websiteUrl && (
-                        <a
-                            href={websiteUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Voir le site"
+                        <CustomButton
+                            small
+                            link
+                            linkUrl={websiteUrl}
+                            info="Voir le site"
                         >
                             <i className="linkify icon"></i>
-                        </a>
+                        </CustomButton>
                     )}
                     {githubLink && (
-                        <a
-                            href={githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Code source"
+                        <CustomButton
+                            small
+                            link
+                            linkUrl={githubLink}
+                            info="Code source"
                         >
                             <i className="github icon"></i>
-                        </a>
+                        </CustomButton>
                     )}
                 </p>
             )}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../components/card/card.component';
+import CustomButton from '../../components/custom-button/custom-button.component';
 import data from '../../data';
 import './projects.styles.scss';
 
@@ -53,9 +54,9 @@ class ProjectsPage extends React.Component {
                     pour consulter davantage de mes travaux.
                 </p>
                 <div className="container">
-                    <button onClick={() => this.previousCard()}>
+                    <CustomButton onClick={() => this.previousCard()}>
                         <i className="large chevron left icon"></i>
-                    </button>
+                    </CustomButton>
 
                     {displayedProjects.map(projectIndex => (
                         <Card
@@ -70,9 +71,9 @@ class ProjectsPage extends React.Component {
                             githubLink={projects[projectIndex].githubLink}
                         />
                     ))}
-                    <button onClick={() => this.nextCard()}>
+                    <CustomButton onClick={() => this.nextCard()}>
                         <i className="large chevron right icon"></i>
-                    </button>
+                    </CustomButton>
                 </div>
             </main>
         );
