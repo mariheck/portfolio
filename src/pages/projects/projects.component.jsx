@@ -6,7 +6,7 @@ import './projects.styles.scss';
 
 class ProjectsPage extends React.Component {
     state = {
-        firstDisplayedProjects: [0, 1, 2],
+        displayedProjects: [0, 1, 2],
         projects: data.projects
     };
 

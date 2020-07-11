@@ -8,48 +8,43 @@
 }
 
 .home-page-background {
-    z-index: -1;
-    background-position: top right;
+    z-index: 2;
+    background-position: top left;
     background-size: cover;
-    filter: grayscale(85%);
-    opacity: 0.2;
+    opacity: 1;
 }
 
 .home-page-text {
+    z-index: 3;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 250px;
+    align-items: flex-start;
+    padding-top: 100px;
 
     h3 {
         font-size: 50px;
         letter-spacing: 5px;
         border: none;
-        margin: 30px auto 120px;
-        opacity: 0;
-        animation: 2.5s fadein 0.5s forwards;
-    }
-
-    h5 {
-        color: #a33a48;
-        font-size: 20px;
-        opacity: 0;
-        animation: 2.5s fadein 0s forwards;
+        margin-left: 80px;
+        padding: 0;
     }
 
     .links-wrapper {
         opacity: 0;
-        margin-top: 100px;
-        animation: 1.5s slidefade 1s forwards;
+        margin-top: 90px;
+        animation: 1.5s fadein 1s forwards;
+        margin-left: 80px;
 
         a {
-            margin: 0 20px;
+            margin: 0 40px 0 0;
             padding: 10px 15px;
             border: 1px solid #a33a48;
             text-transform: uppercase;
             font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.4);
             color: #a33a48;
-            transition: color ease-in 0.2s, background ease-in 0.2s;
+            transition: color ease-in 0.2s, background ease-in 0.2s,
+                border ease-in 0.2s;
 
             &:hover {
                 background-color: #a33a48;
@@ -62,6 +57,7 @@
 
                 &:hover {
                     background-color: #7a2a35;
+                    border-color: #7a2a35;
                 }
             }
         }

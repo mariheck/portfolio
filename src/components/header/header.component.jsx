@@ -5,13 +5,12 @@ import './header.styles.scss';
 const Header = () => (
     <header>
         <div className="logo-container">
-            {/* <div className="logo">
-                <Link to="/">mh.</Link>
-            </div> */}
-            <div className="title-container">
-                <h1>Marine Heckler</h1>
-                <h2>full-stack web developer</h2>
-            </div>
+            <Link to="/">
+                <div className="title-container">
+                    <h1>Marine Heckler</h1>
+                    <h2>full-stack web developer</h2>
+                </div>
+            </Link>
         </div>
 
         <nav>
