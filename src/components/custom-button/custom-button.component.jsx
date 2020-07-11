@@ -3,7 +3,7 @@ import './custom-button.styles.scss';
 
 // Custom circle button, from regular buttons or links
 
-const CustomButton = ({ link, linkUrl, info, small, children }) => {
+const CustomButton = ({ link, linkUrl, info, small, children, onAction }) => {
     return (
         <Fragment>
             {link ? (
@@ -20,6 +20,7 @@ const CustomButton = ({ link, linkUrl, info, small, children }) => {
                 <button
                     title={info}
                     className={`custom-button ${small ? 'small' : ''}`}
+                    onClick={onAction}
                 >
                     {children}
                 </button>

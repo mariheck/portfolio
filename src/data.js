@@ -53,7 +53,16 @@ const data = {
         },
         {
             id: 2,
-            title: 'Site Personnel',
+            title: 'Portfolio',
+            imageUrl: PortfolioThumbnail,
+            tags: ['html', 'sass', 'react'],
+            description:
+                'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
+            githubLink: 'https://github.com/mariheck/portfolio'
+        },
+        {
+            id: 3,
+            title: 'Test 3',
             imageUrl: PortfolioThumbnail,
             tags: ['html', 'sass', 'react', 'node.js'],
             description:
@@ -61,8 +70,8 @@ const data = {
             githubLink: 'https://github.com/mariheck'
         },
         {
-            id: 3,
-            title: 'Site Personnel',
+            id: 4,
+            title: 'Test 4',
             imageUrl: PortfolioThumbnail,
             tags: ['html', 'sass', 'react', 'node.js'],
             description:

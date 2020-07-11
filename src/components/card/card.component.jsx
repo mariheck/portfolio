@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomButton from '../custom-button/custom-button.component';
+import ArrowButton from '../arrow-button/arrow-button.component';
 import './card.styles.scss';
 
 const Card = ({
@@ -12,6 +13,7 @@ const Card = ({
     websiteUrl,
     githubLink,
     large,
+    swipable,
     previousCard,
     nextCard
 }) => (
@@ -31,14 +33,10 @@ const Card = ({
                 ))}
             </ul>
             <p>{description}</p>
-            {large ? (
+            {swipable ? (
                 <p className="links">
-                    <CustomButton onClick={previousCard}>
-                        <i className="large chevron left icon"></i>
-                    </CustomButton>
-                    <CustomButton onClick={nextCard}>
-                        <i className="large chevron right icon"></i>
-                    </CustomButton>
+                    <ArrowButton direction="left" onSwipe={previousCard} />
+                    <ArrowButton direction="right" onSwipe={nextCard} />
                 </p>
             ) : (
                 <p className="links">

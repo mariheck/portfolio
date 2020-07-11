@@ -55,6 +55,7 @@ class CompetencesPage extends React.Component {
                             competences[displayedCompetence].description
                         }
                         large
+                        swipable
                         previousCard={this.previousCard}
                         nextCard={this.nextCard}
                     />

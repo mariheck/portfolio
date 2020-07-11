@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from '../../components/card/card.component';
-import CustomButton from '../../components/custom-button/custom-button.component';
+import ArrowButton from '../../components/arrow-button/arrow-button.component';
 import data from '../../data';
 import './projects.styles.scss';
 
 class ProjectsPage extends React.Component {
     state = {
-        displayedProjects: [0, 1, 2],
+        firstDisplayedProjects: [0, 1, 2],
         projects: data.projects
     };
 
@@ -18,7 +18,6 @@ class ProjectsPage extends React.Component {
             }
             return newCard;
         });
-
         this.setState({ ...this.state, displayedProjects: nextCards });
     };
 
@@ -30,7 +29,6 @@ class ProjectsPage extends React.Component {
             }
             return newCard;
         });
-
         this.setState({ ...this.state, displayedProjects: nextCards });
     };
 
@@ -54,10 +52,7 @@ class ProjectsPage extends React.Component {
                     pour consulter davantage de mes travaux.
                 </p>
                 <div className="container">
-                    <CustomButton onClick={() => this.previousCard()}>
-                        <i className="large chevron left icon"></i>
-                    </CustomButton>
-
+                    <ArrowButton direction="left" onSwipe={this.previousCard} />
                     {displayedProjects.map(projectIndex => (
                         <Card
                             key={projectIndex}
@@ -71,9 +66,7 @@ class ProjectsPage extends React.Component {
                             githubLink={projects[projectIndex].githubLink}
                         />
                     ))}
-                    <CustomButton onClick={() => this.nextCard()}>
-                        <i className="large chevron right icon"></i>
-                    </CustomButton>
+                    <ArrowButton direction="right" onSwipe={this.nextCard} />
                 </div>
             </main>
         );
