@@ -1,10 +1,10 @@
 import React from 'react';
-import Card from '../../components/card/card.component';
+import ProjectCard from '../../components/project-card/project-card.component';
 import ArrowButton from '../../components/arrow-button/arrow-button.component';
 import data from '../../data';
 import './projects.styles.scss';
 
-class ProjectsPage extends React.Component {
+class ProjectsSection extends React.Component {
     state = {
         displayedProjects: [0, 1, 2],
         projects: data.projects
@@ -54,16 +54,15 @@ class ProjectsPage extends React.Component {
                 <div className="container">
                     <ArrowButton direction="left" onSwipe={this.previousCard} />
                     {displayedProjects.map(projectIndex => (
-                        <Card
+                        <ProjectCard
                             key={projectIndex}
-                            id={`00${projectIndex + 1}`}
-                            projectsNumber={`00${projectsTotal}`}
-                            title={projects[projectIndex].title}
                             imageUrl={projects[projectIndex].imageUrl}
+                            id={`00${projectIndex + 1}`}
+                            totalCards={`00${projectsTotal}`}
+                            title={projects[projectIndex].title}
                             tags={projects[projectIndex].tags}
                             description={projects[projectIndex].description}
-                            websiteUrl={projects[projectIndex].websiteUrl}
-                            githubLink={projects[projectIndex].githubLink}
+                            links={projects[projectIndex].links}
                         />
                     ))}
                     <ArrowButton direction="right" onSwipe={this.nextCard} />
@@ -73,4 +72,4 @@ class ProjectsPage extends React.Component {
     }
 }
 
-export default ProjectsPage;
+export default ProjectsSection;

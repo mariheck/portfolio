@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/header/header.component';
-import HomePage from '../homepage/homepage.component';
-import CompetencesPage from '../competences/competences.component';
-import ProjectsPage from '../projects/projects.component';
-import AboutPage from '../about/about.component';
+import Header from '../../sections/header/header.component';
+import HomeSection from '../../sections/home/home.component';
+import CompetencesSection from '../../sections/competences/competences.component';
+import ProjectsSection from '../../sections/projects/projects.component';
+import AboutSection from '../../sections/about/about.component';
 
 const MainPage = () => (
     <Fragment>
-        <HomePage />
+        <HomeSection />
         <Header />
-        <CompetencesPage />
-        <ProjectsPage />
-        <AboutPage />
+        <CompetencesSection />
+        <ProjectsSection />
+        <AboutSection />
     </Fragment>
 );
 

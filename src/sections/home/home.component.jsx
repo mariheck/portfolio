@@ -1,17 +1,17 @@
 import React from 'react';
 import Typical from 'react-typical';
 import Background from '../../assets/homepage.jpg';
-import './homepage.styles.scss';
+import './home.styles.scss';
 
-const HomePage = () => (
+const HomeSection = () => (
     <React.Fragment>
         <div
-            className="home-page-background"
+            className="home-background"
             style={{
                 backgroundImage: `url(${Background})`
             }}
         ></div>
-        <div id="accueil" className="home-page-text">
+        <div id="accueil" className="home-text">
             <h3>Hi,</h3>
             <h3>
                 <Typical
@@ -39,4 +39,4 @@ const HomePage = () => (
     </React.Fragment>
 );
 
-export default HomePage;
+export default HomeSection;

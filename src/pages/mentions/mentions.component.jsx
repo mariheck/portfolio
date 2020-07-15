@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/header/header.component';
+import Header from '../../sections/header/header.component';
 import './mentions.styles.scss';
 
 const MentionsPage = () => (
@@ -7,9 +7,7 @@ const MentionsPage = () => (
         <Header simplified />
         <section className="mentions">
             <h3>Mentions Légales</h3>
-            <div className="container">
-                https://unsplash.com/@lephotographe_
-            </div>
+            <div className="container">mentions</div>
         </section>
     </Fragment>
 );

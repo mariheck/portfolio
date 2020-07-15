@@ -1,0 +1,14 @@
+.competence-card {
+    .image {
+        filter: grayscale(80%);
+        align-self: flex-start;
+    }
+
+    .content {
+        align-self: flex-end;
+    }
+
+    .links {
+        justify-content: space-between;
+    }
+}

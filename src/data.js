@@ -49,8 +49,18 @@ const data = {
             tags: ['html', 'sass', 'react', 'node.js'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-            websiteUrl: 'https://github.com',
-            githubLink: 'https://github.com/mariheck'
+            links: [
+                {
+                    linkUrl: 'https://github.com',
+                    info: 'Voir le site',
+                    icon: 'linkify'
+                },
+                {
+                    linkUrl: 'https://github.com/mariheck',
+                    info: 'Code source',
+                    icon: 'github'
+                }
+            ]
         },
         {
             id: 2,
@@ -59,7 +69,14 @@ const data = {
             tags: ['html', 'sass', 'react'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-            githubLink: 'https://github.com/mariheck/portfolio'
+
+            links: [
+                {
+                    linkUrl: 'https://github.com/mariheck/portfolio',
+                    info: 'Code source',
+                    icon: 'github'
+                }
+            ]
         },
         {
             id: 3,
@@ -69,7 +86,18 @@ const data = {
             tags: ['html', 'sass', 'react', 'node.js'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-            githubLink: 'https://github.com/mariheck'
+            links: [
+                {
+                    linkUrl: 'https://github.com',
+                    info: 'Voir le site',
+                    icon: 'linkify'
+                },
+                {
+                    linkUrl: 'https://github.com/mariheck',
+                    info: 'Code source',
+                    icon: 'github'
+                }
+            ]
         },
         {
             id: 4,
@@ -79,7 +107,18 @@ const data = {
             tags: ['html', 'sass', 'react', 'node.js'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-            githubLink: 'https://github.com/mariheck'
+            links: [
+                {
+                    linkUrl: 'https://github.com',
+                    info: 'Voir le site',
+                    icon: 'linkify'
+                },
+                {
+                    linkUrl: 'https://github.com/mariheck',
+                    info: 'Code source',
+                    icon: 'github'
+                }
+            ]
         }
     ]
 };

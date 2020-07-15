@@ -2,7 +2,7 @@ import React from 'react';
 import Portrait from '../../assets/portrait.jpg';
 import './about.styles.scss';
 
-const AboutPage = () => (
+const AboutSection = () => (
     <section id="a-propos" className="about">
         <h3>A propos</h3>
 
@@ -16,4 +16,4 @@ const AboutPage = () => (
     </section>
 );
 
-export default AboutPage;
+export default AboutSection;

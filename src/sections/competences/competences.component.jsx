@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../../components/card/card.component';
+import CompetenceCard from '../../components/competence-card/competence-card.component';
 import data from '../../data';
 
-class CompetencesPage extends React.Component {
+class CompetencesSection extends React.Component {
     state = {
         displayedCompetence: 0,
         competences: data.competences
@@ -45,17 +45,15 @@ class CompetencesPage extends React.Component {
                 <h3>Compétences</h3>
 
                 <div className="container">
-                    <Card
-                        id={`00${competences[displayedCompetence].id}`}
-                        projectsNumber={`00${competencesTotal}`}
-                        title={competences[displayedCompetence].title}
+                    <CompetenceCard
                         imageUrl={competences[displayedCompetence].imageUrl}
+                        id={`00${competences[displayedCompetence].id}`}
+                        totalCards={`00${competencesTotal}`}
+                        title={competences[displayedCompetence].title}
                         tags={competences[displayedCompetence].tags}
                         description={
                             competences[displayedCompetence].description
                         }
-                        large
-                        swipable
                         previousCard={this.previousCard}
                         nextCard={this.nextCard}
                     />
@@ -65,4 +63,4 @@ class CompetencesPage extends React.Component {
     }
 }
 
-export default CompetencesPage;
+export default CompetencesSection;
