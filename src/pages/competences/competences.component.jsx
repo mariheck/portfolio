@@ -41,8 +41,8 @@ class CompetencesPage extends React.Component {
         const competencesTotal = competences.length;
 
         return (
-            <main>
-                <h3>Savoir-Faire</h3>
+            <section id="competences">
+                <h3>Compétences</h3>
 
                 <div className="container">
                     <Card
@@ -60,7 +60,7 @@ class CompetencesPage extends React.Component {
                         nextCard={this.nextCard}
                     />
                 </div>
-            </main>
+            </section>
         );
     }
 }

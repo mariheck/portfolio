@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Typical from 'react-typical';
 import Background from '../../assets/homepage.jpg';
 import './homepage.styles.scss';
@@ -12,7 +11,7 @@ const HomePage = () => (
                 backgroundImage: `url(${Background})`
             }}
         ></div>
-        <div className="home-page-text">
+        <div id="accueil" className="home-page-text">
             <h3>Hi,</h3>
             <h3>
                 <Typical
@@ -33,7 +32,7 @@ const HomePage = () => (
             </h3>
 
             <div className="links-wrapper">
-                <Link to="/savoir-faire">En savoir plus</Link>
+                <a href="#competences">En savoir plus</a>
                 <a href="mailto:marine.heckler@icloud.com">Me contacter</a>
             </div>
         </div>

@@ -1,31 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './header.styles.scss';
 
 const Header = () => (
     <header>
         <div className="logo-container">
-            <Link to="/">
+            <a href="#accueil">
                 <div className="title-container">
                     <h1>Marine Heckler</h1>
                     <h2>full-stack web developer</h2>
                 </div>
-            </Link>
+            </a>
         </div>
 
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <a href="#accueil">Accueil</a>
                 </li>
                 <li>
-                    <Link to="/savoir-faire">Savoir-Faire</Link>
+                    <a href="#competences">Compétences</a>
                 </li>
                 <li>
-                    <Link to="/projets">Projets</Link>
+                    <a href="#projets">Projets</a>
                 </li>
                 <li>
-                    <Link to="/a-propos">A propos</Link>
+                    <a href="#a-propos">A propos</a>
                 </li>
                 <li>
                     <a href="mailto:marine.heckler@icloud.com">Contact</a>

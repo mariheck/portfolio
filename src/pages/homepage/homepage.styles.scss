@@ -1,21 +1,20 @@
 .home-page-background,
 .home-page-text {
     width: 100vw;
+}
+
+.home-page-background {
+    background-position: top left;
+    background-size: cover;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.home-page-background {
-    z-index: 2;
-    background-position: top left;
-    background-size: cover;
-    opacity: 1;
+    z-index: -1;
 }
 
 .home-page-text {
-    z-index: 3;
+    height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,9 +29,9 @@
     }
 
     .links-wrapper {
-        opacity: 0;
+        // opacity: 0;
         margin-top: 90px;
-        animation: 1.5s fadein 1s forwards;
+        // animation: 1.5s fadein 1s forwards;
         margin-left: 80px;
 
         a {

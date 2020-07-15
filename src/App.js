@@ -11,14 +11,18 @@ import MentionsPage from './pages/mentions/mentions.component';
 function App() {
     return (
         <div>
+            <HomePage />
             <Header />
-            <Switch>
+            <CompetencesPage />
+            <ProjectsPage />
+            <AboutPage />
+            {/* <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/savoir-faire" component={CompetencesPage} />
                 <Route exact path="/projets" component={ProjectsPage} />
                 <Route exact path="/a-propos" component={AboutPage} />
                 <Route exact path="/mentions" component={MentionsPage} />
-            </Switch>
+            </Switch> */}
             <Footer />
         </div>
     );

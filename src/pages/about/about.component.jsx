@@ -3,7 +3,7 @@ import Portrait from '../../assets/portrait.jpg';
 import './about.styles.scss';
 
 const AboutPage = () => (
-    <main>
+    <section id="a-propos" className="about">
         <h3>A propos</h3>
 
         <div className="container about-container">
@@ -13,7 +13,7 @@ const AboutPage = () => (
                 style={{ backgroundImage: `url(${Portrait})` }}
             />
         </div>
-    </main>
+    </section>
 );
 
 export default AboutPage;

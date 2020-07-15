@@ -37,7 +37,7 @@ class ProjectsPage extends React.Component {
         const projectsTotal = projects.length;
 
         return (
-            <main>
+            <section id="projets" className="projects">
                 <h3>Projets</h3>
                 <p className="intro">
                     Vous trouverez ici certains de mes travaux passés. N'hésitez
@@ -68,7 +68,7 @@ class ProjectsPage extends React.Component {
                     ))}
                     <ArrowButton direction="right" onSwipe={this.nextCard} />
                 </div>
-            </main>
+            </section>
         );
     }
 }
