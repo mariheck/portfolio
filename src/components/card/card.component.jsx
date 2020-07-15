@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from 'semantic-ui-react';
 import CustomButton from '../custom-button/custom-button.component';
 import ArrowButton from '../arrow-button/arrow-button.component';
 import './card.styles.scss';
@@ -47,7 +48,7 @@ const Card = ({
                             linkUrl={websiteUrl}
                             info="Voir le site"
                         >
-                            <i className="linkify icon"></i>
+                            <Icon name="linkify" />
                         </CustomButton>
                     )}
                     {githubLink && (
@@ -57,7 +58,7 @@ const Card = ({
                             linkUrl={githubLink}
                             info="Code source"
                         >
-                            <i className="github icon"></i>
+                            <Icon name="github" />
                         </CustomButton>
                     )}
                 </p>
