@@ -45,7 +45,7 @@ const data = {
             id: 1,
             title: 'Saving',
             imageUrl: SavingThumbnail,
-            tags: ['html', 'sass', 'react', 'node.js'],
+            tags: ['react', 'sass', 'node.js'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
             links: [
@@ -65,7 +65,7 @@ const data = {
             id: 2,
             title: 'Portfolio',
             imageUrl: PortfolioThumbnail,
-            tags: ['html', 'sass', 'react'],
+            tags: ['react', 'sass'],
             description:
                 'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
 
