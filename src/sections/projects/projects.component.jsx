@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ProjectCard from '../../components/project-card/project-card.component';
 import ArrowButton from '../../components/arrow-button/arrow-button.component';
 import data from '../../data';
@@ -52,16 +52,21 @@ class ProjectsSection extends React.Component {
                     pour consulter davantage de mes travaux.
                 </p>
                 <div className="container">
-                    <ArrowButton
-                        buttonClass="desktop-btn"
-                        direction="left"
-                        onSwipe={this.previousCard}
-                    />
-                    <ArrowButton
-                        buttonClass="mobile-btn"
-                        direction="up"
-                        onSwipe={this.previousCard}
-                    />
+                    {projectsTotal <= 3 ? null : (
+                        <Fragment>
+                            <ArrowButton
+                                buttonClass="desktop-btn"
+                                direction="left"
+                                onSwipe={this.previousCard}
+                            />
+                            <ArrowButton
+                                buttonClass="mobile-btn"
+                                direction="up"
+                                onSwipe={this.previousCard}
+                            />
+                        </Fragment>
+                    )}
+
                     {displayedProjects.map(projectIndex => (
                         <ProjectCard
                             key={projectIndex}
@@ -74,16 +79,20 @@ class ProjectsSection extends React.Component {
                             links={projects[projectIndex].links}
                         />
                     ))}
-                    <ArrowButton
-                        buttonClass="desktop-btn"
-                        direction="right"
-                        onSwipe={this.nextCard}
-                    />
-                    <ArrowButton
-                        buttonClass="mobile-btn"
-                        direction="down"
-                        onSwipe={this.nextCard}
-                    />
+                    {projectsTotal <= 3 ? null : (
+                        <Fragment>
+                            <ArrowButton
+                                buttonClass="desktop-btn"
+                                direction="right"
+                                onSwipe={this.nextCard}
+                            />
+                            <ArrowButton
+                                buttonClass="mobile-btn"
+                                direction="down"
+                                onSwipe={this.nextCard}
+                            />
+                        </Fragment>
+                    )}
                 </div>
             </section>
         );

@@ -1,6 +1,6 @@
-import ImageFront from './assets/front.jpg';
-import ImageBack from './assets/back.jpg';
-import ImageResponsive from './assets/mobile.jpg';
+import ImageFront from './assets/hayley-kim-design-FjDE3bgxwVc-unsplash.jpg';
+import ImageBack from './assets/hayley-kim-design-pxOZYMvffg0-unsplash.jpg';
+import ImageResponsive from './assets/hayley-kim-design-Ur_mMwdxMGc-unsplash.jpg';
 
 import SavingThumbnail from './assets/saving.jpg';
 import PortfolioThumbnail from './assets/homepage.jpg';
@@ -10,8 +10,7 @@ const data = {
         {
             id: 1,
             title: 'Développement Front-End',
-            imageUrl:
-                'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80',
+            imageUrl: ImageFront,
             tags: [
                 'html',
                 'css',
@@ -98,28 +97,28 @@ const data = {
                     icon: 'github'
                 }
             ]
-        },
-        {
-            id: 4,
-            title: 'Test 4',
-            imageUrl:
-                'https://images.unsplash.com/photo-1594698434973-12099e222c64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-            tags: ['html', 'sass', 'react', 'node.js'],
-            description:
-                'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
-            links: [
-                {
-                    linkUrl: 'https://github.com',
-                    info: 'Voir le site',
-                    icon: 'linkify'
-                },
-                {
-                    linkUrl: 'https://github.com/mariheck',
-                    info: 'Code source',
-                    icon: 'github'
-                }
-            ]
         }
+        // {
+        //     id: 4,
+        //     title: 'Test 4',
+        //     imageUrl:
+        //         'https://images.unsplash.com/photo-1594698434973-12099e222c64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        //     tags: ['html', 'sass', 'react', 'node.js'],
+        //     description:
+        //         'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte',
+        //     links: [
+        //         {
+        //             linkUrl: 'https://github.com',
+        //             info: 'Voir le site',
+        //             icon: 'linkify'
+        //         },
+        //         {
+        //             linkUrl: 'https://github.com/mariheck',
+        //             info: 'Code source',
+        //             icon: 'github'
+        //         }
+        //     ]
+        // }
     ]
 };
 

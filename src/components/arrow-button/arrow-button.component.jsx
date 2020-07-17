@@ -4,7 +4,7 @@ import CustomButton from '../custom-button/custom-button.component';
 
 const ArrowButton = ({ direction, onSwipe, ...buttonProps }) => (
     <CustomButton onAction={onSwipe} {...buttonProps}>
-        <Icon name={`chevron ${direction}`} size="large" />
+        <Icon name={`chevron ${direction}`} size="big" />
     </CustomButton>
 );
 

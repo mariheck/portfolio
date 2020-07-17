@@ -19,14 +19,18 @@ const CustomButton = ({
                     target="_blank"
                     rel="noopener noreferrer"
                     title={info}
-                    className={`custom-button ${buttonClass}`}
+                    className={`custom-button ${
+                        buttonClass ? buttonClass : ''
+                    }`}
                 >
                     {children}
                 </a>
             ) : (
                 <button
                     title={info}
-                    className={`custom-button ${buttonClass}`}
+                    className={`custom-button ${
+                        buttonClass ? buttonClass : ''
+                    }`}
                     onClick={onAction}
                 >
                     {children}

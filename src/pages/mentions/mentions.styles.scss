@@ -1,10 +1,46 @@
 .mentions {
-    height: 84vh;
+    height: auto;
     padding-top: 7vh;
+
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h4,
+        h5,
+        p,
+        ul {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 18px;
+
+            &:not(:first-of-type) {
+                margin-top: 50px;
+            }
+        }
+
+        h5 {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        p,
+        a {
+            font-size: 12px;
+            max-width: 900px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
     .mentions {
-        padding-top: 8vh;
+        padding-top: 50px;
     }
 }

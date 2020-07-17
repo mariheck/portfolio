@@ -15,7 +15,7 @@ const ProjectCard = ({ description, links, ...cardProps }) => (
                     linkUrl={link.linkUrl}
                     info={link.info}
                 >
-                    <Icon name={link.icon} />
+                    <Icon name={link.icon} size="large" />
                 </CustomButton>
             ))}
         </p>
