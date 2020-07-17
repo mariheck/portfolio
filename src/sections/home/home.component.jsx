@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical';
+import Typed from 'react-typed';
 import { Icon } from 'semantic-ui-react';
 import Background from '../../assets/homepage.jpg';
 import './home.styles.scss';
@@ -15,20 +15,16 @@ const HomeSection = () => (
         <div id="accueil" className="home-text">
             <h3>Hi,</h3>
             <h3>
-                <Typical
-                    steps={[
-                        1000,
+                <Typed
+                    strings={[
                         "I'm Marine Heckler",
-                        2000,
                         "I'm a Web Developer",
-                        2000,
                         "I'm a React enthousiast",
-                        2000,
-                        "I'm a Node.js dev",
-                        1000
+                        "I'm a Node.js dev"
                     ]}
-                    loop={Infinity}
-                    wrapper="span"
+                    typeSpeed={100}
+                    backSpeed={50}
+                    loop
                 />
             </h3>
 

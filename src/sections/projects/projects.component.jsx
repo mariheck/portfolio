@@ -62,7 +62,7 @@ class ProjectsSection extends React.Component {
                     >
                         GitHub
                     </a>{' '}
-                    pour consulter davantage de mes travaux.
+                    pour consulter davantage de mes projets.
                 </p>
 
                 <div className="container">
