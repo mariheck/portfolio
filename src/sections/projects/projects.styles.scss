@@ -12,4 +12,21 @@
             text-decoration: underline;
         }
     }
+
+    .mobile-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projects {
+        .desktop-btn {
+            display: none;
+        }
+
+        .mobile-btn {
+            display: block;
+            margin: 20px auto;
+        }
+    }
 }

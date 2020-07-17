@@ -52,7 +52,16 @@ class ProjectsSection extends React.Component {
                     pour consulter davantage de mes travaux.
                 </p>
                 <div className="container">
-                    <ArrowButton direction="left" onSwipe={this.previousCard} />
+                    <ArrowButton
+                        buttonClass="desktop-btn"
+                        direction="left"
+                        onSwipe={this.previousCard}
+                    />
+                    <ArrowButton
+                        buttonClass="mobile-btn"
+                        direction="up"
+                        onSwipe={this.previousCard}
+                    />
                     {displayedProjects.map(projectIndex => (
                         <ProjectCard
                             key={projectIndex}
@@ -65,7 +74,16 @@ class ProjectsSection extends React.Component {
                             links={projects[projectIndex].links}
                         />
                     ))}
-                    <ArrowButton direction="right" onSwipe={this.nextCard} />
+                    <ArrowButton
+                        buttonClass="desktop-btn"
+                        direction="right"
+                        onSwipe={this.nextCard}
+                    />
+                    <ArrowButton
+                        buttonClass="mobile-btn"
+                        direction="down"
+                        onSwipe={this.nextCard}
+                    />
                 </div>
             </section>
         );

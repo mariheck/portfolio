@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import { Icon } from 'semantic-ui-react';
 import Background from '../../assets/homepage.jpg';
 import './home.styles.scss';
 
@@ -35,6 +36,10 @@ const HomeSection = () => (
                 <a href="#competences">En savoir plus</a>
                 <a href="mailto:marine.heckler@icloud.com">Me contacter</a>
             </div>
+
+            <a href="#competences">
+                <Icon name="chevron circle down" size="huge" inverted />
+            </a>
         </div>
     </React.Fragment>
 );

@@ -59,6 +59,10 @@
             }
         }
     }
+
+    .icon {
+        display: none;
+    }
 }
 
 @keyframes fadein {
@@ -71,5 +75,56 @@
     100% {
         opacity: 1;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-text {
+        height: 100vh;
+        padding-top: 18vh;
+
+        h3 {
+            width: 100%;
+            font-size: 35px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .links-wrapper {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50vh;
+            width: 100%;
+
+            a {
+                margin: 20px auto;
+                width: 40vw;
+                text-align: center;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.4);
+                    color: #a33a48;
+                }
+
+                &:last-of-type {
+                    &:hover {
+                        background-color: #a33a48;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+        }
     }
 }

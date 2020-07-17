@@ -16,6 +16,7 @@
 
         h4 {
             color: #131313;
+            transition: color ease-in 0.2s;
         }
 
         .links {
@@ -25,11 +26,37 @@
 
     &:hover {
         .image {
-            filter: grayscale(0%);
+            filter: grayscale(0);
         }
 
         h4 {
             color: #a33a48;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-card {
+        width: inherit;
+        flex-basis: inherit;
+
+        &:not(:last-of-type) {
+            margin-bottom: 70px;
+        }
+
+        .image {
+            filter: grayscale(0);
+            height: 250px;
+        }
+
+        .content {
+            height: 350px;
+            width: 95%;
+            margin-left: 2%;
+
+            h4 {
+                color: #a33a48;
+            }
         }
     }
 }

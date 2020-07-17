@@ -24,6 +24,7 @@ h3 {
     margin-bottom: 30px;
     border-right: 2px solid #474545;
     border-left: 2px solid #474545;
+    text-align: center;
 }
 
 a {
@@ -37,4 +38,15 @@ a {
     align-items: center;
     width: 100%;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        padding: 10vh 15px;
+        height: auto;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
 }
