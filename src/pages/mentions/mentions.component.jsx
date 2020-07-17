@@ -55,6 +55,26 @@ const MentionsPage = () => (
                             <Icon name="external alternate" size="small" />
                         </a>
                     </li>
+                    <li>
+                        <a
+                            href="https://unsplash.com/@michaeldam"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Michael Dam{' '}
+                            <Icon name="external alternate" size="small" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.facebook.com/zen.to.go.anastasia/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Zen to go - Anastasia{' '}
+                            <Icon name="external alternate" size="small" />
+                        </a>
+                    </li>
                 </ul>
                 <h5>Photographie section à propos</h5>
                 <ul>

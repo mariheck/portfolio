@@ -6,6 +6,10 @@
 
     .content {
         align-self: flex-end;
+
+        p:not(.link) {
+            font-size: 14px;
+        }
     }
 
     .links {
