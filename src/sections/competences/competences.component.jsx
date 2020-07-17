@@ -8,32 +8,31 @@ class CompetencesSection extends React.Component {
         competences: data.competences
     };
 
-    previousCard = () => {
+    changeCard = direction => {
         let currentCard = this.state.displayedCompetence;
-        currentCard--;
-        currentCard < 0
-            ? this.setState({
-                  ...this.state,
-                  displayedCompetence: this.state.competences.length - 1
-              })
-            : this.setState({
-                  ...this.state,
-                  displayedCompetence: currentCard
-              });
-    };
 
-    nextCard = () => {
-        let currentCard = this.state.displayedCompetence;
-        currentCard++;
-        currentCard > this.state.competences.length - 1
-            ? this.setState({
-                  ...this.state,
-                  displayedCompetence: 0
-              })
-            : this.setState({
-                  ...this.state,
-                  displayedCompetence: currentCard
-              });
+        if (direction === 'previous') {
+            currentCard--;
+        } else if (direction === 'next') {
+            currentCard++;
+        }
+
+        if (currentCard < 0) {
+            this.setState({
+                ...this.state,
+                displayedCompetence: this.state.competences.length - 1
+            });
+        } else if (currentCard > this.state.competences.length - 1) {
+            this.setState({
+                ...this.state,
+                displayedCompetence: 0
+            });
+        } else {
+            this.setState({
+                ...this.state,
+                displayedCompetence: currentCard
+            });
+        }
     };
 
     render() {
@@ -54,8 +53,7 @@ class CompetencesSection extends React.Component {
                         description={
                             competences[displayedCompetence].description
                         }
-                        previousCard={this.previousCard}
-                        nextCard={this.nextCard}
+                        changeCard={this.changeCard}
                     />
                 </div>
             </section>

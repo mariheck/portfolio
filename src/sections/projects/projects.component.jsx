@@ -6,9 +6,22 @@ import './projects.styles.scss';
 
 class ProjectsSection extends React.Component {
     state = {
-        displayedProjects: [0, 1, 2],
+        displayedProjects: [],
         projects: data.projects
     };
+
+    componentDidMount() {
+        let newDisplayedProjects = [0, 1, 2];
+
+        if (this.state.projects.length < 3) {
+            newDisplayedProjects.splice(this.state.projects.length);
+        }
+
+        this.setState({
+            ...this.state,
+            displayedProjects: newDisplayedProjects
+        });
+    }
 
     previousCard = () => {
         const nextCards = this.state.displayedProjects.map(card => {
@@ -34,7 +47,7 @@ class ProjectsSection extends React.Component {
 
     render() {
         const { projects, displayedProjects } = this.state;
-        const projectsTotal = projects.length;
+        const projectsNumber = projects.length;
 
         return (
             <section id="projets" className="projects">
@@ -51,8 +64,9 @@ class ProjectsSection extends React.Component {
                     </a>{' '}
                     pour consulter davantage de mes travaux.
                 </p>
+
                 <div className="container">
-                    {projectsTotal <= 3 ? null : (
+                    {projectsNumber <= 3 ? null : (
                         <Fragment>
                             <ArrowButton
                                 buttonClass="desktop-btn"
@@ -72,14 +86,15 @@ class ProjectsSection extends React.Component {
                             key={projectIndex}
                             imageUrl={projects[projectIndex].imageUrl}
                             id={`00${projectIndex + 1}`}
-                            totalCards={`00${projectsTotal}`}
+                            totalCards={`00${projectsNumber}`}
                             title={projects[projectIndex].title}
                             tags={projects[projectIndex].tags}
                             description={projects[projectIndex].description}
                             links={projects[projectIndex].links}
                         />
                     ))}
-                    {projectsTotal <= 3 ? null : (
+
+                    {projectsNumber <= 3 ? null : (
                         <Fragment>
                             <ArrowButton
                                 buttonClass="desktop-btn"
