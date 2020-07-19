@@ -71,6 +71,30 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .card {
+        .content {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        .content {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        .content {
+            width: 80%;
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
     .card {
         width: 100%;

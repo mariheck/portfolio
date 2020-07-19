@@ -78,6 +78,14 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .home-text {
+        h3 {
+            font-size: 45px;
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
     .home-text {
         height: 100vh;

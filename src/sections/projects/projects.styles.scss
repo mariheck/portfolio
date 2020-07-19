@@ -17,8 +17,12 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .projects {
+        .container {
+            flex-wrap: wrap;
+        }
+
         .desktop-btn {
             display: none;
         }

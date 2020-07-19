@@ -1,6 +1,6 @@
 .mentions {
-    height: auto;
-    padding-top: 7vh;
+    padding-top: 20px;
+    padding-bottom: 0;
 
     .container {
         flex-direction: column;
@@ -41,6 +41,6 @@
 
 @media screen and (max-width: 800px) {
     .mentions {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 }
