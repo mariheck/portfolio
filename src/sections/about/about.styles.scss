@@ -1,29 +1,23 @@
-.about {
-    height: 92vh;
+.about-container {
+    .content {
+        width: 60%;
+        align-self: flex-start;
+    }
 
-    .about-container {
-        .content {
-            width: 60%;
-            align-self: flex-start;
-        }
-
-        .image {
-            width: 35%;
-            height: 500px;
-            background-position: right bottom;
-            background-size: cover;
-            filter: grayscale(50%);
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1),
-                0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05),
-                0 16px 16px rgba(0, 0, 0, 0.05), 0 32px 32px rgba(0, 0, 0, 0.05);
-        }
+    .image {
+        width: 35%;
+        height: 500px;
+        background-position: right bottom;
+        background-size: cover;
+        filter: grayscale(50%);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.05),
+            0 8px 8px rgba(0, 0, 0, 0.05), 0 16px 16px rgba(0, 0, 0, 0.05),
+            0 32px 32px rgba(0, 0, 0, 0.05);
     }
 }
 
 @media screen and (max-width: 800px) {
     .about {
-        height: auto;
-
         .about-container {
             .content {
                 width: 100%;

@@ -1,11 +1,9 @@
 import React, { Fragment } from 'react';
 import './custom-button.styles.scss';
 
-// Custom circle button, from regular buttons or links
-
 const CustomButton = ({
     buttonClass,
-    link,
+    isLink,
     linkUrl,
     info,
     children,
@@ -13,7 +11,7 @@ const CustomButton = ({
 }) => {
     return (
         <Fragment>
-            {link ? (
+            {isLink ? (
                 <a
                     href={linkUrl}
                     target="_blank"

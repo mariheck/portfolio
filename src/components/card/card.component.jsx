@@ -7,6 +7,7 @@ const Card = ({ children, ...cardProps }) => (
             className="image"
             style={{ backgroundImage: `url(${cardProps.imageUrl})` }}
         />
+
         <div className="content">
             <span>
                 {cardProps.id}/{cardProps.totalCards}

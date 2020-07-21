@@ -23,7 +23,7 @@ class ProjectsSection extends React.Component {
         });
     }
 
-    previousCard = () => {
+    previousCards = () => {
         const nextCards = this.state.displayedProjects.map(card => {
             let newCard = card - 1;
             if (newCard < 0) {
@@ -34,7 +34,7 @@ class ProjectsSection extends React.Component {
         this.setState({ ...this.state, displayedProjects: nextCards });
     };
 
-    nextCard = () => {
+    nextCards = () => {
         const nextCards = this.state.displayedProjects.map(card => {
             let newCard = card + 1;
             if (newCard > this.state.projects.length - 1) {
@@ -52,6 +52,7 @@ class ProjectsSection extends React.Component {
         return (
             <section id="projets" className="projects">
                 <h3>Projets</h3>
+
                 <p className="intro">
                     Vous trouverez ici certains de mes travaux passés. N'hésitez
                     pas à consulter mon profil{' '}
@@ -71,12 +72,12 @@ class ProjectsSection extends React.Component {
                             <ArrowButton
                                 buttonClass="desktop-btn"
                                 direction="left"
-                                onSwipe={this.previousCard}
+                                onSwipe={this.previousCards}
                             />
                             <ArrowButton
                                 buttonClass="mobile-btn"
                                 direction="up"
-                                onSwipe={this.previousCard}
+                                onSwipe={this.previousCards}
                             />
                         </Fragment>
                     )}
@@ -99,12 +100,12 @@ class ProjectsSection extends React.Component {
                             <ArrowButton
                                 buttonClass="desktop-btn"
                                 direction="right"
-                                onSwipe={this.nextCard}
+                                onSwipe={this.nextCards}
                             />
                             <ArrowButton
                                 buttonClass="mobile-btn"
                                 direction="down"
-                                onSwipe={this.nextCard}
+                                onSwipe={this.nextCards}
                             />
                         </Fragment>
                     )}

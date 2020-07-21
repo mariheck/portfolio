@@ -1,5 +1,4 @@
 .project-card {
-    width: 30%;
     flex-basis: 30%;
 
     .image {
@@ -22,6 +21,10 @@
 
         .links {
             justify-content: flex-end;
+
+            .custom-button:not(:last-of-type) {
+                margin-right: 5px;
+            }
         }
     }
 

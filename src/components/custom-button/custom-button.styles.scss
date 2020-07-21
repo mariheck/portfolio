@@ -2,17 +2,10 @@
     color: #9d9d9d;
     background-color: transparent;
     border: none;
-    width: 35px;
-    height: 35px;
     cursor: pointer;
     outline: none;
     text-align: center;
-    line-height: 35px;
     transition: color ease-in 0.5s, background ease-in 0.5s;
-
-    &:not(:last-of-type) {
-        margin-right: 5px;
-    }
 
     i.icon {
         margin-right: 0;

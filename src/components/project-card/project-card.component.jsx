@@ -11,7 +11,7 @@ const ProjectCard = ({ description, links, ...cardProps }) => (
             {links.map((link, idx) => (
                 <CustomButton
                     key={idx}
-                    link
+                    isLink
                     linkUrl={link.linkUrl}
                     info={link.info}
                 >

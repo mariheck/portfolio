@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Typed from 'react-typed';
 import { Icon } from 'semantic-ui-react';
 import Background from '../../assets/homepage.jpg';
 import './home.styles.scss';
 
 const HomeSection = () => (
-    <React.Fragment>
+    <Fragment>
         <div
             className="home-background"
             style={{
                 backgroundImage: `url(${Background})`
             }}
         ></div>
+
         <div id="accueil" className="home-text">
             <h3>Hi,</h3>
             <h3>
@@ -37,7 +38,7 @@ const HomeSection = () => (
                 <Icon name="chevron circle down" size="huge" inverted />
             </a>
         </div>
-    </React.Fragment>
+    </Fragment>
 );
 
 export default HomeSection;

@@ -18,41 +18,44 @@ class Header extends React.Component {
         const { isMenuHidden } = this.state;
 
         return (
-            <header>
-                <div className="logo-container">
-                    {simplified ? (
+            <Fragment>
+                {simplified ? (
+                    <header>
                         <Link to="/">
                             <div className="title-container">
                                 <h1>Marine Heckler</h1>
                                 <h2>full-stack web developer</h2>
                             </div>
                         </Link>
-                    ) : (
+                        <nav>
+                            <ul>
+                                <li>
+                                    <Link to="/">
+                                        <Icon
+                                            name="chevron left"
+                                            size="small"
+                                        />
+                                        Retour
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                ) : (
+                    <header>
                         <a href="#accueil">
                             <div className="title-container">
                                 <h1>Marine Heckler</h1>
                                 <h2>full-stack web developer</h2>
                             </div>
                         </a>
-                    )}
-                </div>
-
-                {simplified ? (
-                    <nav className="simplified">
-                        <ul>
-                            <li>
-                                <Link to="/">
-                                    <Icon name="chevron left" size="small" />
-                                    Retour
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
-                ) : (
-                    <Fragment>
-                        <Icon onClick={this.toggleMenu} name="bars" />
-                        <nav className={`full ${isMenuHidden ? 'hidden' : ''}`}>
-                            <ul>
+                        <nav>
+                            <Icon onClick={this.toggleMenu} name="bars" />
+                            <ul
+                                className={`${
+                                    isMenuHidden ? 'hidden' : 'dropdown-menu'
+                                }`}
+                            >
                                 <li>
                                     <a
                                         href="#accueil"
@@ -95,9 +98,9 @@ class Header extends React.Component {
                                 </li>
                             </ul>
                         </nav>
-                    </Fragment>
+                    </header>
                 )}
-            </header>
+            </Fragment>
         );
     }
 }
