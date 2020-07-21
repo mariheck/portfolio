@@ -17,6 +17,7 @@ const CustomButton = ({
                     target="_blank"
                     rel="noopener noreferrer"
                     title={info}
+                    aria-label={info}
                     className={`custom-button ${
                         buttonClass ? buttonClass : ''
                     }`}
@@ -26,6 +27,7 @@ const CustomButton = ({
             ) : (
                 <button
                     title={info}
+                    aria-label={info}
                     className={`custom-button ${
                         buttonClass ? buttonClass : ''
                     }`}

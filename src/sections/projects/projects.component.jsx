@@ -72,11 +72,13 @@ class ProjectsSection extends React.Component {
                             <ArrowButton
                                 buttonClass="desktop-btn"
                                 direction="left"
+                                info="Précédent"
                                 onSwipe={this.previousCards}
                             />
                             <ArrowButton
                                 buttonClass="mobile-btn"
                                 direction="up"
+                                info="Précédent"
                                 onSwipe={this.previousCards}
                             />
                         </Fragment>
@@ -100,11 +102,13 @@ class ProjectsSection extends React.Component {
                             <ArrowButton
                                 buttonClass="desktop-btn"
                                 direction="right"
+                                info="Suivant"
                                 onSwipe={this.nextCards}
                             />
                             <ArrowButton
                                 buttonClass="mobile-btn"
                                 direction="down"
+                                info="Suivant"
                                 onSwipe={this.nextCards}
                             />
                         </Fragment>

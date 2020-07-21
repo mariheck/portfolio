@@ -9,9 +9,14 @@ const CompetenceCard = ({ description, changeCard, ...cardProps }) => (
         <p className="links">
             <ArrowButton
                 direction="left"
+                info="Précédent"
                 onSwipe={() => changeCard('previous')}
             />
-            <ArrowButton direction="right" onSwipe={() => changeCard('next')} />
+            <ArrowButton
+                direction="right"
+                info="Suivant"
+                onSwipe={() => changeCard('next')}
+            />
         </p>
     </Card>
 );
