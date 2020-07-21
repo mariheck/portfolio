@@ -21,7 +21,7 @@ class Header extends React.Component {
             <Fragment>
                 {simplified ? (
                     <header>
-                        <Link to="/">
+                        <Link to="/portfolio">
                             <div className="title-container">
                                 <h1>Marine Heckler</h1>
                                 <h2>full-stack web developer</h2>
@@ -30,7 +30,7 @@ class Header extends React.Component {
                         <nav>
                             <ul>
                                 <li>
-                                    <Link to="/">
+                                    <Link to="/portfolio">
                                         <Icon
                                             name="chevron left"
                                             size="small"
