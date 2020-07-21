@@ -6,7 +6,7 @@ const Footer = () => (
     <footer>
         <p>
             {new Date().getFullYear()} © Marine Heckler |{' '}
-            <Link to="/mentions">Mentions Légales</Link>
+            <Link to="/portfolio/mentions">Mentions Légales</Link>
         </p>
     </footer>
 );
