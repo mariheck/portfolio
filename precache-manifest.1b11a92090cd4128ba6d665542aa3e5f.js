@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37d270f13853b1d8a9281a768a5ffac7",
+    "revision": "26d04b12eef1ca587563fc692da474dc",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/3.5aa7db39.chunk.css"
   },
   {
-    "revision": "78555377821752e55ed0",
-    "url": "/portfolio/static/css/4.1dbf0f98.chunk.css"
+    "revision": "d5e951603dd300a6a2dd",
+    "url": "/portfolio/static/css/4.21257239.chunk.css"
   },
   {
-    "revision": "6b65525d7df2fefd0123",
-    "url": "/portfolio/static/css/5.b48b8fd7.chunk.css"
+    "revision": "f2c91d1bb4ec26086d17",
+    "url": "/portfolio/static/css/5.f70312c0.chunk.css"
   },
   {
-    "revision": "caac43ecf8008a76ac34",
-    "url": "/portfolio/static/css/main.93f4fac1.chunk.css"
+    "revision": "6cdb4c567094329ee142",
+    "url": "/portfolio/static/css/main.4acdb7ef.chunk.css"
   },
   {
     "revision": "57b09abe1843d28b9115",
@@ -36,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/3.dbe47944.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78555377821752e55ed0",
-    "url": "/portfolio/static/js/4.95e6257b.chunk.js"
+    "revision": "d5e951603dd300a6a2dd",
+    "url": "/portfolio/static/js/4.6ba99178.chunk.js"
   },
   {
-    "revision": "6b65525d7df2fefd0123",
-    "url": "/portfolio/static/js/5.ef7d2bea.chunk.js"
+    "revision": "f2c91d1bb4ec26086d17",
+    "url": "/portfolio/static/js/5.c80e8e12.chunk.js"
   },
   {
     "revision": "86df7c9bd008dbfae3af",
@@ -52,12 +52,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/6.42b27562.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "caac43ecf8008a76ac34",
+    "revision": "6cdb4c567094329ee142",
     "url": "/portfolio/static/js/main.5c2f79f2.chunk.js"
   },
   {
-    "revision": "3a5a06cfdb046367064e",
-    "url": "/portfolio/static/js/runtime-main.8d9dfb8b.js"
+    "revision": "6a1f4f1530ab4c57face",
+    "url": "/portfolio/static/js/runtime-main.2002a4c1.js"
   },
   {
     "revision": "78c068dd6cf3f7d782f606f089938ee3",
