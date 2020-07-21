@@ -6,7 +6,7 @@ header {
     height: 8vh;
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    color: #9d9d9d;
+    color: #939393;
     position: relative;
     z-index: 10;
     position: sticky;
@@ -37,7 +37,7 @@ header {
         li:not(:last-of-type) {
             margin-right: 20px;
             padding-right: 20px;
-            border-right: solid 1px #9d9d9d;
+            border-right: solid 1px #939393;
         }
 
         a {
@@ -92,7 +92,7 @@ header {
 
             a {
                 &:hover {
-                    color: #9d9d9d;
+                    color: #939393;
                 }
             }
         }
