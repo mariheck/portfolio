@@ -19,8 +19,13 @@
 
 @media screen and (max-width: 1000px) {
     .projects {
+        .intro {
+            margin-bottom: 0;
+        }
+
         .container {
             flex-wrap: wrap;
+            margin-top: 0;
         }
 
         .desktop-btn {
