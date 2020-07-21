@@ -50,7 +50,11 @@ class Header extends React.Component {
                             </div>
                         </a>
                         <nav>
-                            <Icon onClick={this.toggleMenu} name="bars" />
+                            <Icon
+                                onClick={this.toggleMenu}
+                                name="bars"
+                                size="big"
+                            />
                             <ul
                                 className={`${
                                     isMenuHidden ? 'hidden' : 'dropdown-menu'
