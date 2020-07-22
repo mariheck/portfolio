@@ -21,8 +21,8 @@ const MentionsPage = () => (
                 <p>
                     Ce site a été conçu dans le but de présenter les compétences
                     et travaux de Marine Heckler. Le code source est disponible
-                    sur GitHub et libre de droit. Cependant, le contenu (textes
-                    et photographies) est soumis aux droits d'auteur.
+                    sur GitHub et libre de droit. Le contenu (textes et
+                    photographies) est quant à lui soumis aux droits d'auteur.
                 </p>
                 <h5>Photographies sections accueil et compétences</h5>
                 <ul>

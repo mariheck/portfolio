@@ -1,12 +1,44 @@
 .about-container {
+    justify-content: space-between;
+
     .content {
         width: 60%;
-        align-self: flex-start;
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+
+        .links {
+            display: flex;
+            margin: 20px 0;
+            padding: 10px 0;
+            width: 100%;
+            justify-content: flex-start;
+
+            .custom-button {
+                margin-right: 15px;
+            }
+        }
+
+        h4,
+        li {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
     }
 
     .image {
         width: 35%;
-        height: 500px;
+        height: 600px;
         background-position: right bottom;
         background-size: cover;
         filter: grayscale(50%);
@@ -18,9 +50,17 @@
 
 @media screen and (max-width: 1000px) {
     .about-container {
+        flex-wrap: wrap;
+
         .content {
             width: 100%;
             margin-bottom: 50px;
+
+            .links {
+                .custom-button:not(:last-of-type) {
+                    margin-right: 20px;
+                }
+            }
         }
 
         .image {

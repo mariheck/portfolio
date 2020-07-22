@@ -23,7 +23,7 @@ const data = {
                 'hook'
             ],
             description:
-                "Du simple site vitrine à l'application une page, je saurai apporter mon savoir faire pour un résultat optimal. En effet, au delà de l'utilisation du html et du css, je travaille également avec React.js pour une expérience utilisateur la plus agréable possible. Etant en formation continue, je saurai également appliquer les technologies les plus récentes et performantes."
+                "Du simple site vitrine à la single page application, je saurai m'adapter à chaque projet pour un résultat optimal. En effet, au delà de l'utilisation du html et du css, je travaille également avec React.js pour la réalisation d'applications web dynamiques et performantes."
         },
         {
             id: 2,
@@ -31,7 +31,7 @@ const data = {
             imageUrl: ImageBack,
             tags: ['node.js', 'mongoDB'],
             description:
-                'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
+                "Pour les applications plus complexes nécessitant un serveur, j'utilise la technologie Node.js ainsi que le framework Express.js, se basant sur le language JavaScript. J'utilise également MongoDB pour l'intégration d'une base de données NoSQL."
         },
         {
             id: 3,
@@ -39,7 +39,7 @@ const data = {
             imageUrl: ImageResponsive,
             tags: ['desktop', 'mobile', 'tablet'],
             description:
-                'texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte texte'
+                "Pour chaque projet sur le quel je travaille, je porte une attention toute particulière à la mise en place d'un comportement responsif et la compatibilité avec les principaux explorateurs afin d'apporter la même qualité d'expérience utilisateur quelque soit le support."
         }
     ],
     projects: [

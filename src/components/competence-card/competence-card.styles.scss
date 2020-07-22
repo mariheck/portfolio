@@ -8,7 +8,7 @@
         align-self: flex-end;
 
         p:not(.link) {
-            font-size: 14px;
+            font-size: 13.5px;
         }
     }
 
@@ -20,8 +20,6 @@
 @media screen and (max-width: 550px) {
     .competence-card {
         .content {
-            height: 410px;
-
             p:not(.link) {
                 font-size: 12px;
             }
@@ -29,10 +27,18 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .competence-card {
         .content {
-            height: 520px;
+            height: 420px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .competence-card {
+        .content {
+            height: 500px;
         }
     }
 }
