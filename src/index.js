@@ -5,6 +5,8 @@ import App from './App';
 import 'semantic-ui-css/components/icon.min.css';
 import './index.css';
 
+import * as serviceWorker from './serviceWorker';
+
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
@@ -13,3 +15,5 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById('root')
 );
+
+serviceWorker.register();
