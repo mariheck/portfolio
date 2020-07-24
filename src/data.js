@@ -87,7 +87,7 @@ const data = {
                 'Application de détection de visages. La partie front-end a été réalisée avec React.js. La partie serveur a été développée avec node.js, et la base de données avec PostgreSQL.',
             links: [
                 {
-                    linkUrl: 'https://mariheck-smartbrain.herokuapp.com',
+                    linkUrl: 'https://mariheck.github.io/smart-brain/',
                     info: 'Voir le site',
                     icon: 'linkify'
                 },
