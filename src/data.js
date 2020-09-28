@@ -3,6 +3,7 @@ import ImageBack from './assets/back.jpg';
 import ImageResponsive from './assets/mobile.jpg';
 
 import SavingThumbnail from './assets/saving.jpg';
+import SavingDemoThumbnail from './assets/saving-demo.jpg';
 import PortfolioThumbnail from './assets/homepage.jpg';
 import SmartbrainThumbnail from './assets/smartbrain.jpg';
 import ZentogoThumbnail from './assets/zentogo.jpg';
@@ -29,7 +30,7 @@ const data = {
             id: 2,
             title: 'Développement Back-End',
             imageUrl: ImageBack,
-            tags: ['node.js', 'mongoDB'],
+            tags: ['node.js', 'express.js', 'mongoDB'],
             description:
                 "Pour les applications plus complexes nécessitant un serveur, j'utilise la technologie Node.js ainsi que le framework Express.js, se basant sur le language JavaScript. J'utilise également MongoDB pour l'intégration d'une base de données NoSQL."
         },
@@ -39,7 +40,7 @@ const data = {
             imageUrl: ImageResponsive,
             tags: ['desktop', 'mobile', 'tablet'],
             description:
-                "Pour chaque projet sur le quel je travaille, je porte une attention toute particulière à la mise en place d'un comportement responsif et la compatibilité avec les principaux explorateurs afin d'apporter la même qualité d'expérience utilisateur quelque soit le support."
+                "Pour chaque projet sur le quel je travaille, je porte une attention toute particulière à la mise en place d'un comportement responsif et à la compatibilité avec les principaux explorateurs afin d'apporter la même qualité d'expérience utilisateur quelque soit le support."
         }
     ],
     projects: [
@@ -49,22 +50,42 @@ const data = {
             imageUrl: SavingThumbnail,
             tags: ['react', 'sass', 'node.js', 'mongoDB'],
             description:
-                "Portfolio photo et vidéo réalisé avec React.js. Dispose d'un tableau de bord administrateur développé avec node.js, et d'une base de données réalisée avec MongoDB.",
+                'Portfolio photo et vidéo réalisé avec React.js. Tableau de bord administrateur développé avec node.js, base de données réalisée avec MongoDB, stockage des photos sur Firebase.',
             links: [
                 {
-                    linkUrl: 'https://github.com',
+                    linkUrl: 'https://saving-portfolio.herokuapp.com',
                     info: 'Voir le site',
                     icon: 'linkify'
                 },
                 {
-                    linkUrl: 'https://github.com/mariheck',
-                    info: 'Code source',
+                    linkUrl: 'https://github.com/mariheck/saving-api',
+                    info: 'Code source API',
                     icon: 'github'
                 }
             ]
         },
         {
             id: 2,
+            title: 'Saving Démo',
+            imageUrl: SavingDemoThumbnail,
+            tags: ['react', 'sass', 'node.js'],
+            description:
+                'Version démo du dashboard administrateur du portfolio Saving. Les fonctionnalités liées à Firebase, MongoDB ou Passport ne sont pas visibles dans cette version.',
+            links: [
+                {
+                    linkUrl: 'https://saving-demo.herokuapp.com',
+                    info: 'Voir le site',
+                    icon: 'linkify'
+                },
+                {
+                    linkUrl: 'https://github.com/mariheck/saving-demo',
+                    info: 'Code source',
+                    icon: 'github'
+                }
+            ]
+        },
+        {
+            id: 3,
             title: 'Portfolio',
             imageUrl: PortfolioThumbnail,
             tags: ['react', 'sass', 'react router'],
@@ -79,7 +100,7 @@ const data = {
             ]
         },
         {
-            id: 3,
+            id: 4,
             title: 'Smart Brain',
             imageUrl: SmartbrainThumbnail,
             tags: ['react', 'node.js', 'postgreSQL'],
@@ -99,12 +120,12 @@ const data = {
                 {
                     linkUrl: 'https://github.com/mariheck/smart-brain-api',
                     info: 'Code source backend',
-                    icon: 'node js'
+                    icon: 'github'
                 }
             ]
         },
         {
-            id: 4,
+            id: 5,
             title: 'Zen To Go',
             imageUrl: ZentogoThumbnail,
             tags: ['html', 'css', 'bootstrap', 'node.js', 'ejs'],
