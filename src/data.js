@@ -88,7 +88,7 @@ const data = {
             id: 3,
             title: 'Portfolio',
             imageUrl: PortfolioThumbnail,
-            tags: ['react', 'sass', 'react router'],
+            tags: ['react', 'sass', 'react router', 'hook'],
             description:
                 "Site vitrine personnel développé avec React.js. Single Page Application, utilisant React Router pour la mise à jour de l'url, ainsi que hook pour la mise à jour des différents états.",
             links: [

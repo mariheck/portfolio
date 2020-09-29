@@ -3,19 +3,19 @@ import Card from '../card/card.component';
 import ArrowButton from '../arrow-button/arrow-button.component';
 import './competence-card.styles.scss';
 
-const CompetenceCard = ({ description, changeCard, ...cardProps }) => (
+const CompetenceCard = ({ description, onChangeCard, ...cardProps }) => (
     <Card cardClass="competence-card" {...cardProps}>
         <p>{description}</p>
         <p className="links">
             <ArrowButton
                 direction="left"
                 info="Précédent"
-                onSwipe={() => changeCard('previous')}
+                onSwipe={() => onChangeCard(-1)}
             />
             <ArrowButton
                 direction="right"
                 info="Suivant"
-                onSwipe={() => changeCard('next')}
+                onSwipe={() => onChangeCard(1)}
             />
         </p>
     </Card>

@@ -8,36 +8,30 @@ const CustomButton = ({
     info,
     children,
     onAction
-}) => {
-    return (
-        <Fragment>
-            {isLink ? (
-                <a
-                    href={linkUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={info}
-                    aria-label={info}
-                    className={`custom-button ${
-                        buttonClass ? buttonClass : ''
-                    }`}
-                >
-                    {children}
-                </a>
-            ) : (
-                <button
-                    title={info}
-                    aria-label={info}
-                    className={`custom-button ${
-                        buttonClass ? buttonClass : ''
-                    }`}
-                    onClick={onAction}
-                >
-                    {children}
-                </button>
-            )}
-        </Fragment>
-    );
-};
+}) => (
+    <Fragment>
+        {isLink ? (
+            <a
+                href={linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={info}
+                aria-label={info}
+                className={`custom-button ${buttonClass ? buttonClass : ''}`}
+            >
+                {children}
+            </a>
+        ) : (
+            <button
+                title={info}
+                aria-label={info}
+                className={`custom-button ${buttonClass ? buttonClass : ''}`}
+                onClick={onAction}
+            >
+                {children}
+            </button>
+        )}
+    </Fragment>
+);
 
 export default CustomButton;
