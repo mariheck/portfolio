@@ -50,7 +50,7 @@ const data = {
             imageUrl: SavingThumbnail,
             tags: ['react', 'sass', 'node.js', 'mongoDB'],
             description:
-                'Portfolio photo et vidéo réalisé avec React.js. Tableau de bord administrateur développé avec node.js, base de données réalisée avec MongoDB, stockage des photos sur Firebase.',
+                'Portfolio photo et vidéo réalisé avec React.js. Tableau de bord administrateur développé avec node.js, base de données réalisée avec MongoDB, stockage des photos sur Firebase. [Projet en cours]',
             links: [
                 {
                     linkUrl: 'https://saving-portfolio.herokuapp.com',
