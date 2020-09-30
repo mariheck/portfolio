@@ -20,7 +20,7 @@ const AboutSection = () => (
                     <strong>
                         de la robotique et de l'intelligence artificielle
                     </strong>
-                    , dans les quels j'ai débuté ma carrière professionnelle.
+                    , dans lesquels j'ai débuté ma carrière professionnelle.
                 </p>
                 <p>
                     J'ai souhaité l'année dernière changer de voie et me
