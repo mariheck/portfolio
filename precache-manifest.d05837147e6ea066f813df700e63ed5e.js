@@ -1,67 +1,87 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ecfc98ac7f2a8d3af8ee0c6d776a0ab",
+    "revision": "8847014c9e9459e75ecae13252a298e1",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b5f2daeb677f3b1cc726",
+    "revision": "12bb126f1cf023c581a7",
     "url": "/portfolio/static/css/3.767f94a7.chunk.css"
   },
   {
-    "revision": "7b388d938c6bcb0e50ae",
-    "url": "/portfolio/static/css/4.5aa7db39.chunk.css"
+    "revision": "ce75e6baea6eab27fa26",
+    "url": "/portfolio/static/css/4.1c8d19e9.chunk.css"
   },
   {
-    "revision": "66907982a5ae586c1337",
-    "url": "/portfolio/static/css/5.f70312c0.chunk.css"
+    "revision": "147ebd547bbac82ad778",
+    "url": "/portfolio/static/css/5.5aa7db39.chunk.css"
   },
   {
-    "revision": "e9de8349d490754cb126",
+    "revision": "09061ea18a914714076d",
+    "url": "/portfolio/static/css/6.f70312c0.chunk.css"
+  },
+  {
+    "revision": "a7e125f1d0aab1b4497c",
     "url": "/portfolio/static/css/main.78939644.chunk.css"
   },
   {
-    "revision": "b8fe78bb6fa90d53fe0b",
-    "url": "/portfolio/static/js/0.9c417743.chunk.js"
+    "revision": "d090414ebb3fa641dc70",
+    "url": "/portfolio/static/js/0.f004562e.chunk.js"
   },
   {
     "revision": "81896c98bac7b5b16ab1d3790da5b937",
-    "url": "/portfolio/static/js/0.9c417743.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/0.f004562e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5f2daeb677f3b1cc726",
-    "url": "/portfolio/static/js/3.9431360a.chunk.js"
+    "revision": "12bb126f1cf023c581a7",
+    "url": "/portfolio/static/js/3.94c70150.chunk.js"
   },
   {
-    "revision": "7b388d938c6bcb0e50ae",
-    "url": "/portfolio/static/js/4.8c3c2e67.chunk.js"
+    "revision": "ce75e6baea6eab27fa26",
+    "url": "/portfolio/static/js/4.c90c13aa.chunk.js"
+  },
+  {
+    "revision": "147ebd547bbac82ad778",
+    "url": "/portfolio/static/js/5.de3ea5a2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio/static/js/4.8c3c2e67.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/5.de3ea5a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66907982a5ae586c1337",
-    "url": "/portfolio/static/js/5.2e1814d4.chunk.js"
+    "revision": "09061ea18a914714076d",
+    "url": "/portfolio/static/js/6.192bc57b.chunk.js"
   },
   {
-    "revision": "17f31ecd9a8206724328",
-    "url": "/portfolio/static/js/6.ec8d6ad8.chunk.js"
+    "revision": "48600842cce0f9c22ef3",
+    "url": "/portfolio/static/js/7.e9223837.chunk.js"
   },
   {
     "revision": "c9d766c1dd1c4fc861550f137f41f961",
-    "url": "/portfolio/static/js/6.ec8d6ad8.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/7.e9223837.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e9de8349d490754cb126",
-    "url": "/portfolio/static/js/main.0cf6e8c8.chunk.js"
+    "revision": "a7e125f1d0aab1b4497c",
+    "url": "/portfolio/static/js/main.545abf4a.chunk.js"
   },
   {
-    "revision": "b9e76c2951121b95d104",
-    "url": "/portfolio/static/js/runtime-main.1c419619.js"
+    "revision": "95df3585306c755a8bec",
+    "url": "/portfolio/static/js/runtime-main.95cf4aeb.js"
   },
   {
     "revision": "78c068dd6cf3f7d782f606f089938ee3",
     "url": "/portfolio/static/media/back.78c068dd.jpg"
+  },
+  {
+    "revision": "c4ae195c2e9b673566d19aa6e82e58e2",
+    "url": "/portfolio/static/media/beachtravel-img.c4ae195c.jpg"
+  },
+  {
+    "revision": "d72b75a57cb20fc612942db8353f0dcb",
+    "url": "/portfolio/static/media/beachtravel-mobile.d72b75a5.jpg"
+  },
+  {
+    "revision": "a5f429479061a833f7c9ea7168634a74",
+    "url": "/portfolio/static/media/beachtravel.a5f42947.jpg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -84,8 +104,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/brand-icons.e8c322de.woff2"
   },
   {
+    "revision": "646cf96b0c83b6540a8eca17e4ca79c1",
+    "url": "/portfolio/static/media/danse-img.646cf96b.jpg"
+  },
+  {
+    "revision": "e84292c1da10e78a191c7ea02d173c88",
+    "url": "/portfolio/static/media/danse-mobile.e84292c1.jpg"
+  },
+  {
+    "revision": "1723aeb8d97c6966fd28069620dc4af1",
+    "url": "/portfolio/static/media/danse.1723aeb8.jpg"
+  },
+  {
     "revision": "b193474200d5ad9f16381b455db4cb4b",
     "url": "/portfolio/static/media/front.b1934742.jpg"
+  },
+  {
+    "revision": "2009349f23495ad992bba097b2b078e6",
+    "url": "/portfolio/static/media/green-img.2009349f.jpg"
+  },
+  {
+    "revision": "7b7d1c1f3b28b39cd07073fea978b719",
+    "url": "/portfolio/static/media/green-mobile.7b7d1c1f.jpg"
+  },
+  {
+    "revision": "15547f8277a8b066518558415e0a58a6",
+    "url": "/portfolio/static/media/green.15547f82.jpg"
   },
   {
     "revision": "a96a1899cecaa16e23d5e75fdbbd4559",
