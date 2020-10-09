@@ -5,6 +5,9 @@ import Spinner from './components/spinner/spinner.component';
 
 const MainPage = lazy(() => import('./pages/main-page/main-page.component'));
 const MentionsPage = lazy(() => import('./pages/mentions/mentions.component'));
+const TemplatesPage = lazy(() =>
+    import('./pages/templates/templates.component')
+);
 
 const App = () => (
     <div>
@@ -15,6 +18,11 @@ const App = () => (
                     exact
                     path="/portfolio/mentions"
                     component={MentionsPage}
+                />
+                <Route
+                    exact
+                    path="/portfolio/templates"
+                    component={TemplatesPage}
                 />
             </Suspense>
         </Switch>

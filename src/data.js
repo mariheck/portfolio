@@ -8,6 +8,16 @@ import PortfolioThumbnail from './assets/homepage.jpg';
 import SmartbrainThumbnail from './assets/smartbrain.jpg';
 import ZentogoThumbnail from './assets/zentogo.jpg';
 
+import GreenThumbnail from './assets/green-img.jpg';
+import GreenDesktop from './assets/green.jpg';
+import GreenMobile from './assets/green-mobile.jpg';
+import BeachThumbnail from './assets/beachtravel-img.jpg';
+import BeachDesktop from './assets/beachtravel.jpg';
+import BeachMobile from './assets/beachtravel-mobile.jpg';
+import DanceThumbnail from './assets/danse-img.jpg';
+import DanceDesktop from './assets/danse.jpg';
+import DanceMobile from './assets/danse-mobile.jpg';
+
 const data = {
     competences: [
         {
@@ -141,6 +151,68 @@ const data = {
                     linkUrl: 'https://github.com/mariheck/zen-to-go',
                     info: 'Code source',
                     icon: 'github'
+                }
+            ]
+        }
+    ],
+    templates: [
+        {
+            id: 1,
+            title: 'Green',
+            imageUrl: GreenThumbnail,
+            tags: ['html5', 'css3'],
+            description:
+                "Un site vitrine d'une page pour présenter votre produit d'une manière simple et claire.",
+            links: [
+                {
+                    linkUrl: GreenDesktop,
+                    info: 'Version Desktop',
+                    icon: 'desktop'
+                },
+                {
+                    linkUrl: GreenMobile,
+                    info: 'Version Mobile',
+                    icon: 'mobile alternate'
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: 'Beach Travel',
+            imageUrl: BeachThumbnail,
+            tags: ['html5', 'css3'],
+            description:
+                "Un site vitrine d'une page adaptable à tous vos services.",
+            links: [
+                {
+                    linkUrl: BeachDesktop,
+                    info: 'Version Desktop',
+                    icon: 'desktop'
+                },
+                {
+                    linkUrl: BeachMobile,
+                    info: 'Version Mobile',
+                    icon: 'mobile alternate'
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: 'Danse !',
+            imageUrl: DanceThumbnail,
+            tags: ['html5', 'css3'],
+            description:
+                "Un site vitrine d'une page pour détailler vos services ou produits efficacement.",
+            links: [
+                {
+                    linkUrl: DanceDesktop,
+                    info: 'Version Desktop',
+                    icon: 'desktop'
+                },
+                {
+                    linkUrl: DanceMobile,
+                    info: 'Version Mobile',
+                    icon: 'mobile alternate'
                 }
             ]
         }
