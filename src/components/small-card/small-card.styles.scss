@@ -1,4 +1,4 @@
-.project-card {
+.small-card {
     flex-basis: 30%;
 
     .image {
@@ -40,7 +40,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .project-card {
+    .small-card {
         .content {
             padding: 25px 30px;
         }
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .project-card {
+    .small-card {
         .content {
             width: 95%;
             margin-left: 2%;
@@ -57,7 +57,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .project-card {
+    .small-card {
         width: 28%;
 
         .content {
@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .project-card {
+    .small-card {
         width: 100%;
         flex-basis: 100%;
 
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .project-card {
+    .small-card {
         .image {
             height: 250px;
         }
@@ -107,7 +107,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .project-card {
+    .small-card {
         .content {
             height: 350px;
         }

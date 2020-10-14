@@ -1,0 +1,23 @@
+.carousel {
+    .mobile-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel {
+        &.container {
+            flex-wrap: wrap;
+            margin-top: 0;
+        }
+
+        .desktop-btn {
+            display: none;
+        }
+
+        .mobile-btn {
+            display: block;
+            margin: 50px auto;
+        }
+    }
+}

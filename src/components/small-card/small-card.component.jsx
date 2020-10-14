@@ -2,10 +2,10 @@ import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import Card from '../card/card.component';
 import CustomButton from '../custom-button/custom-button.component';
-import './project-card.styles.scss';
+import './small-card.styles.scss';
 
-const ProjectCard = ({ description, links, ...cardProps }) => (
-    <Card cardClass="project-card" {...cardProps}>
+const SmallCard = ({ description, links, ...cardProps }) => (
+    <Card cardClass="small-card" {...cardProps}>
         <p>{description}</p>
         <p className="links">
             {links.map((link, idx) => (
@@ -22,4 +22,4 @@ const ProjectCard = ({ description, links, ...cardProps }) => (
     </Card>
 );
 
-export default ProjectCard;
+export default SmallCard;

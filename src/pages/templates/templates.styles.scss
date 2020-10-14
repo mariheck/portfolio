@@ -9,11 +9,7 @@
         margin-bottom: 10px;
     }
 
-    .mobile-btn {
-        display: none;
-    }
-
-    .project-card {
+    .small-card {
         .image {
             filter: grayscale(0);
             height: 315px;
@@ -28,7 +24,7 @@
 
 @media screen and (max-width: 1200px) {
     .templates {
-        .project-card {
+        .small-card {
             .image {
                 height: 300px;
             }
@@ -49,12 +45,7 @@
             margin-bottom: 20px;
         }
 
-        .container {
-            flex-wrap: wrap;
-            margin-top: 0;
-        }
-
-        .project-card {
+        .small-card {
             .image {
                 height: 415px;
             }
@@ -64,21 +55,12 @@
                 padding: 20px;
             }
         }
-
-        .desktop-btn {
-            display: none;
-        }
-
-        .mobile-btn {
-            display: block;
-            margin: 50px auto;
-        }
     }
 }
 
 @media screen and (max-width: 800px) {
     .templates {
-        .project-card {
+        .small-card {
             .image {
                 height: 350px;
             }
@@ -88,7 +70,7 @@
 
 @media screen and (max-width: 450px) {
     .templates {
-        .project-card {
+        .small-card {
             .content {
                 height: 250px;
             }
