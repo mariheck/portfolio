@@ -39,13 +39,15 @@ const Carousel = ({ cards }) => {
                         buttonClass="desktop-btn"
                         direction="left"
                         info="Précédent"
-                        onSwipe={() => changeCards(-1)}
+                        onAction={() => changeCards(-1)}
                     />
                     <ArrowButton
-                        buttonClass="mobile-btn"
                         direction="up"
+                        circle
+                        size="huge"
+                        buttonClass="mobile-btn"
                         info="Précédent"
-                        onSwipe={() => changeCards(-1)}
+                        onAction={() => changeCards(-1)}
                     />
                 </Fragment>
             )}
@@ -66,16 +68,18 @@ const Carousel = ({ cards }) => {
             {cards.length <= 3 ? null : (
                 <Fragment>
                     <ArrowButton
-                        buttonClass="desktop-btn"
                         direction="right"
+                        buttonClass="desktop-btn"
                         info="Suivant"
-                        onSwipe={() => changeCards(1)}
+                        onAction={() => changeCards(1)}
                     />
                     <ArrowButton
-                        buttonClass="mobile-btn"
                         direction="down"
+                        circle
+                        size="huge"
+                        buttonClass="mobile-btn"
                         info="Suivant"
-                        onSwipe={() => changeCards(1)}
+                        onAction={() => changeCards(1)}
                     />
                 </Fragment>
             )}

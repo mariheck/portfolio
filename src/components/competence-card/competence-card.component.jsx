@@ -9,13 +9,32 @@ const CompetenceCard = ({ description, onChangeCard, ...cardProps }) => (
         <p className="links">
             <ArrowButton
                 direction="left"
+                buttonClass="desktop-btn"
                 info="Précédent"
-                onSwipe={() => onChangeCard(-1)}
+                onAction={() => onChangeCard(-1)}
+            />
+            <ArrowButton
+                direction="left"
+                circle
+                size="huge"
+                buttonClass="mobile-btn"
+                info="Précédent"
+                onAction={() => onChangeCard(-1)}
+            />
+
+            <ArrowButton
+                direction="right"
+                buttonClass="desktop-btn"
+                info="Suivant"
+                onAction={() => onChangeCard(1)}
             />
             <ArrowButton
                 direction="right"
+                circle
+                size="huge"
+                buttonClass="mobile-btn"
                 info="Suivant"
-                onSwipe={() => onChangeCard(1)}
+                onAction={() => onChangeCard(1)}
             />
         </p>
     </Card>

@@ -1,9 +1,3 @@
-.carousel {
-    .mobile-btn {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .carousel {
         &.container {
@@ -11,11 +5,11 @@
             margin-top: 0;
         }
 
-        .desktop-btn {
+        .custom-button.desktop-btn {
             display: none;
         }
 
-        .mobile-btn {
+        .custom-button.mobile-btn {
             display: block;
             margin: 50px auto;
         }

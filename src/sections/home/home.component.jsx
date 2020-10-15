@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Typed from 'react-typed';
-import { Icon } from 'semantic-ui-react';
+import ArrowButton from '../../components/arrow-button/arrow-button.component';
 import Background from '../../assets/homepage.jpg';
 import './home.styles.scss';
 
@@ -34,9 +34,15 @@ const HomeSection = () => (
                 <a href="mailto:marine.heckler@icloud.com">Me contacter</a>
             </div>
 
-            <a href="#competences">
-                <Icon name="chevron circle down" size="huge" inverted />
-            </a>
+            <ArrowButton
+                direction="down"
+                circle
+                size="huge"
+                buttonClass="mobile-btn"
+                info="En savoir plus"
+                linkUrl="#competences"
+                isLink
+            />
         </div>
     </Fragment>
 );

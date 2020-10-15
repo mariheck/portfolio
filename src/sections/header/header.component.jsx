@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
+import CustomButton from '../../components/custom-button/custom-button.component';
 import './header.styles.scss';
 
 const Header = ({ simplified }) => {
@@ -40,7 +41,13 @@ const Header = ({ simplified }) => {
                         </div>
                     </a>
                     <nav>
-                        <Icon onClick={toggleMenu} name="bars" size="big" />
+                        <CustomButton
+                            buttonClass="mobile-btn"
+                            onAction={toggleMenu}
+                            info="Menu"
+                        >
+                            <Icon name="bars" size="big" />
+                        </CustomButton>
                         <ul
                             className={`${
                                 isMenuHidden ? 'hidden' : 'dropdown-menu'

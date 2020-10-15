@@ -27,10 +27,6 @@ header {
         }
     }
 
-    i.bars.icon {
-        display: none;
-    }
-
     ul {
         list-style: none;
         display: flex;
@@ -57,11 +53,6 @@ header {
 @media screen and (max-width: 800px) {
     header {
         padding: 10px 15px;
-
-        i.bars.icon {
-            display: block;
-            cursor: pointer;
-        }
 
         ul {
             &.dropdown-menu {
@@ -93,10 +84,6 @@ header {
 
             a {
                 font-size: 16px;
-
-                &:hover {
-                    color: #939393;
-                }
             }
         }
     }
