@@ -5,6 +5,7 @@ const CustomButton = ({
     buttonClass,
     isLink,
     linkUrl,
+    noBlankTarget = false,
     info,
     children,
     onAction
@@ -13,7 +14,7 @@ const CustomButton = ({
         {isLink ? (
             <a
                 href={linkUrl}
-                target="_blank"
+                target={!noBlankTarget ? '_blank' : ''}
                 rel="noopener noreferrer"
                 title={info}
                 aria-label={info}

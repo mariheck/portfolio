@@ -42,6 +42,7 @@ const HomeSection = () => (
                 info="En savoir plus"
                 linkUrl="#competences"
                 isLink
+                noBlankTarget
             />
         </div>
     </Fragment>
