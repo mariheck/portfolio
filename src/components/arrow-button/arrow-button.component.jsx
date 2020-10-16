@@ -10,7 +10,7 @@ const ArrowButton = ({
 }) => (
     <CustomButton {...buttonProps}>
         <Icon
-            name={`chevron ${circle ? 'circle' : ''} ${direction}`}
+            name={`chevron ${direction}${circle ? ' circle' : ''}`}
             size={size}
         />
     </CustomButton>

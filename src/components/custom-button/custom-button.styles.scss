@@ -21,6 +21,12 @@
 
     &:hover {
         color: #a33a48;
+
+        div span,
+        div span::before,
+        div span::after {
+            background-color: #a33a48;
+        }
     }
 }
 

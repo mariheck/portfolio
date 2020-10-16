@@ -40,7 +40,11 @@ const MentionsPage = () => (
                 <h5>Photographies section projets (par ordre d'apparition)</h5>
                 <ul>
                     <li>
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="https://www.facebook.com/ssaving01/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Saving - Anthony P.{' '}
                             <Icon name="external alternate" size="small" />
                         </a>
@@ -79,7 +83,7 @@ const MentionsPage = () => (
                 <h5>Photographie section à propos</h5>
                 <ul>
                     <li>
-                        <a href="/">
+                        <a href="/portfolio">
                             Marine Heckler{' '}
                             <Icon name="external alternate" size="small" />
                         </a>

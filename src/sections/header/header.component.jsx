@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react';
-import CustomButton from '../../components/custom-button/custom-button.component';
+import { HamburgerCollapseReverse } from 'react-animated-burgers';
 import './header.styles.scss';
 
 const Header = ({ simplified }) => {
@@ -41,13 +41,14 @@ const Header = ({ simplified }) => {
                         </div>
                     </a>
                     <nav>
-                        <CustomButton
-                            buttonClass="mobile-btn"
-                            onAction={toggleMenu}
-                            info="Menu"
-                        >
-                            <Icon name="bars" size="big" />
-                        </CustomButton>
+                        <HamburgerCollapseReverse
+                            isActive={!isMenuHidden}
+                            toggleButton={toggleMenu}
+                            barColor="#9d9d9d"
+                            className="custom-button mobile-btn"
+                            title="Menu"
+                            aria-label="Menu"
+                        />
                         <ul
                             className={`${
                                 isMenuHidden ? 'hidden' : 'dropdown-menu'

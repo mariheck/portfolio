@@ -43,21 +43,21 @@ const AboutSection = () => (
                         linkUrl="https://www.linkedin.com/in/marine-heckler/"
                         info="LinkedIn"
                     >
-                        <Icon name="linkedin" size="large" />
+                        <Icon name="linkedin" size="big" />
                     </CustomButton>
                     <CustomButton
                         isLink
                         linkUrl="https://github.com/mariheck"
                         info="Github"
                     >
-                        <Icon name="github alternate" size="large" />
+                        <Icon name="github alternate" size="big" />
                     </CustomButton>
                     <CustomButton
                         isLink
                         linkUrl="mailto:marine.heckler@icloud.com"
                         info="Contacter"
                     >
-                        <Icon name="envelope outline" size="large" />
+                        <Icon name="envelope outline" size="big" />
                     </CustomButton>
                 </p>
                 <h4>Mes études : </h4>
