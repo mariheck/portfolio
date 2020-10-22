@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+*::selection,
+*::-moz-selection {
+    color: #fff;
+    background-color: #a33a48;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 13.5px;
@@ -17,6 +23,7 @@ section {
     align-items: center;
     padding: 85px 50px;
     height: auto;
+    width: 100vw;
 }
 
 h3 {
