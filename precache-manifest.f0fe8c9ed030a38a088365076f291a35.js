@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "08d04d4ec99217d7da652a8293a5c5f7",
+    "revision": "5dca90faa3d7ff1ce1b2e2e81d03f1b2",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,20 +8,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/3.99f9d529.chunk.css"
   },
   {
-    "revision": "254a456319f3ad6dad49",
-    "url": "/portfolio/static/css/4.b44ba4e8.chunk.css"
+    "revision": "e095c4c3d1a37928bdfe",
+    "url": "/portfolio/static/css/4.f9bb2033.chunk.css"
   },
   {
     "revision": "4875ab85745a5ed8c720",
     "url": "/portfolio/static/css/5.5aa7db39.chunk.css"
   },
   {
-    "revision": "374a41ad5fe4b8143281",
-    "url": "/portfolio/static/css/6.7ce1a42c.chunk.css"
+    "revision": "ebeb199380771033c889",
+    "url": "/portfolio/static/css/6.89f75c48.chunk.css"
   },
   {
-    "revision": "fbf4719fbf6cdba2ba43",
-    "url": "/portfolio/static/css/main.9eb62e98.chunk.css"
+    "revision": "9d35b819be1108588dd8",
+    "url": "/portfolio/static/css/main.1a003cab.chunk.css"
   },
   {
     "revision": "2f18ee77727fb3338671",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/3.eac9fbcb.chunk.js"
   },
   {
-    "revision": "254a456319f3ad6dad49",
+    "revision": "e095c4c3d1a37928bdfe",
     "url": "/portfolio/static/js/4.8994dcb2.chunk.js"
   },
   {
@@ -48,7 +48,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/5.5594b7c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "374a41ad5fe4b8143281",
+    "revision": "ebeb199380771033c889",
     "url": "/portfolio/static/js/6.91b3947b.chunk.js"
   },
   {
@@ -60,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/7.30638825.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fbf4719fbf6cdba2ba43",
+    "revision": "9d35b819be1108588dd8",
     "url": "/portfolio/static/js/main.51ef4a8c.chunk.js"
   },
   {
-    "revision": "bdf0796a42fbac0b3630",
-    "url": "/portfolio/static/js/runtime-main.2345331b.js"
+    "revision": "00bbeb29595c53ae7c84",
+    "url": "/portfolio/static/js/runtime-main.370160d9.js"
   },
   {
     "revision": "78c068dd6cf3f7d782f606f089938ee3",
