@@ -1,5 +1,6 @@
 .small-card {
     flex-basis: 30%;
+    padding: 0 5px;
 
     .image {
         width: 100%;
@@ -11,6 +12,7 @@
     .content {
         width: 90%;
         height: 340px;
+        padding: 25px 30px;
         top: -100px;
         margin-bottom: -100px;
 
@@ -39,35 +41,46 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
     .small-card {
-        .content {
-            padding: 25px 30px;
+        .image {
+            height: 190px;
         }
-    }
-}
 
-@media screen and (max-width: 1300px) {
-    .small-card {
         .content {
             width: 95%;
             margin-left: 2%;
+            height: 350px;
+            padding: 20px;
+            top: -80px;
+            margin-bottom: -80px;
         }
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     .small-card {
-        width: 28%;
+        .content {
+            height: 410px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .small-card {
+        .image {
+            height: 170px;
+        }
 
         .content {
-            height: 360px;
-            padding: 20px;
+            height: 480px;
+            top: -60px;
+            margin-bottom: -60px;
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .small-card {
         width: 100%;
         flex-basis: 100%;
@@ -78,12 +91,11 @@
 
         .image {
             filter: grayscale(0);
-            height: 350px;
+            height: 250px;
         }
 
         .content {
-            height: 300px;
-            padding: 30px;
+            height: 290px;
 
             h4 {
                 color: #a33a48;
@@ -98,18 +110,18 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .small-card {
-        .image {
-            height: 250px;
-        }
-    }
-}
-
 @media screen and (max-width: 450px) {
     .small-card {
         .content {
             height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .small-card {
+        .content {
+            height: 380px;
         }
     }
 }
