@@ -1,6 +1,7 @@
 .templates {
     padding-top: 20px;
     padding-bottom: 0;
+    min-height: 84vh;
 
     .intro {
         max-width: 800px;
@@ -12,32 +13,44 @@
     .small-card {
         .image {
             filter: grayscale(0);
-            height: 315px;
+            height: 250px;
             border: 1px solid rgba(0, 0, 0, 0.05);
+            background-position: top center;
         }
 
         .content {
             height: 275px;
+            top: -30px;
+            margin-bottom: -30px;
         }
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     .templates {
         .small-card {
-            .image {
-                height: 300px;
-            }
-
             .content {
-                height: 290px;
-                padding: 20px;
+                height: 310px;
+                top: -60px;
+                margin-bottom: -60px;
             }
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
+    .templates {
+        .small-card {
+            .content {
+                height: 330px;
+                top: -80px;
+                margin-bottom: -80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
     .templates {
         padding-top: 20px;
 
@@ -47,22 +60,11 @@
 
         .small-card {
             .image {
-                height: 415px;
+                height: 350px;
             }
 
             .content {
-                height: 220px;
-                padding: 20px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .templates {
-        .small-card {
-            .image {
-                height: 350px;
+                height: 230px;
             }
         }
     }
@@ -72,7 +74,17 @@
     .templates {
         .small-card {
             .content {
-                height: 250px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .templates {
+        .small-card {
+            .content {
+                height: 300px;
             }
         }
     }
