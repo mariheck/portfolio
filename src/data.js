@@ -31,7 +31,7 @@ const data = {
                 'javascript',
                 'react',
                 'redux',
-                'hook'
+                'hooks'
             ],
             description:
                 "Du simple site vitrine à la single page application, je saurai m'adapter à chaque projet pour un résultat optimal. En effet, au delà de l'utilisation du html et du css, je travaille également avec React.js pour la réalisation d'applications web dynamiques et performantes."
@@ -50,7 +50,7 @@ const data = {
             imageUrl: ImageResponsive,
             tags: ['desktop', 'mobile', 'tablet'],
             description:
-                "Pour chaque projet sur le quel je travaille, je porte une attention toute particulière à la mise en place d'un comportement responsif et à la compatibilité avec les principaux explorateurs afin d'apporter la même qualité d'expérience utilisateur quelque soit le support."
+                "Pour chaque projet sur lequel je travaille, je porte une attention toute particulière à la mise en place d'un comportement responsif et à la compatibilité avec les principaux explorateurs afin d'apporter la même qualité d'expérience utilisateur quelque soit le support."
         }
     ],
     projects: [
