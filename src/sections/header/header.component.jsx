@@ -18,7 +18,7 @@ const Header = ({ simplified }) => {
                     <Link to="/portfolio">
                         <div className="title-container">
                             <h1>Marine Heckler</h1>
-                            <h2>full-stack web developer</h2>
+                            <h2>front-end developer</h2>
                         </div>
                     </Link>
                     <nav>
@@ -37,7 +37,7 @@ const Header = ({ simplified }) => {
                     <a href="#accueil">
                         <div className="title-container">
                             <h1>Marine Heckler</h1>
-                            <h2>full-stack web developer</h2>
+                            <h2>front-end developer</h2>
                         </div>
                     </a>
                     <nav>

@@ -26,10 +26,10 @@ const AboutSection = () => (
                     J'ai souhaité l'année dernière changer de voie et me
                     réorienter vers le développement web. Je me suis alors
                     concentrée majoritairement sur l'apprentissage du{' '}
-                    <strong>JavaScript</strong>, autant pour des applications
-                    frontend (<strong>React</strong>) que backend (
-                    <strong>node.js</strong>), afin de pouvoir travailler sur
-                    tous les aspects d'une application web.
+                    <strong>JavaScript</strong>, principalement pour des
+                    applications frontend (<strong>React.js</strong>), mais
+                    aussi backend (<strong>node.js</strong>), afin de pouvoir
+                    travailler sur tous les aspects d'une application web.
                 </p>
                 <p>
                     Autodidacte et très curieuse, j'aime me lancer de nouveaux

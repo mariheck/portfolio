@@ -21,7 +21,7 @@ const HomeSection = () => (
                         "I'm Marine Heckler",
                         "I'm a Web Developer",
                         "I'm a React enthousiast",
-                        "I'm a Node.js dev"
+                        "I'm a JavaScript dev"
                     ]}
                     typeSpeed={100}
                     backSpeed={50}
